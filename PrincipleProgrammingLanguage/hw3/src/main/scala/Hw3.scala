@@ -64,8 +64,9 @@ object MiniScalaInterpreter {
     case Const(n) => (IntVal(n), mem)
 		case Var(s) => {
       val p = env(Var(s)) match {
-        case (x: IntVal) => if (mem.exists(x.n)) mem(x.n) else x.n
-        case _ => throw new UndefinedSemantics(s"message ${expr}")
+        // case (x: LocVal) => if (mem.exists(x.l)) mem.apply(x.l) else env(Var(s))
+        case (x: LocVal) => mem.apply(x.l)
+        case _ => env(Var(s))
       }
       (p, mem)
 		}
@@ -73,7 +74,7 @@ object MiniScalaInterpreter {
       val E1 = EvalwithMem(env, mem, l)
       val E2 = EvalwithMem(env, E1._2, r)
       val E = (E1, E2) match {
-        case (x: (IntVal, Mem), y: (IntVal, Mem)) => IntVal(x._1.n + y._1.n)
+        case ((x: IntVal, xm: Mem), (y: IntVal, ym: Mem)) => IntVal(x.n + y.n)
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       (E, E2._2)
@@ -82,16 +83,16 @@ object MiniScalaInterpreter {
       val E1 = EvalwithMem(env, mem, l)
       val E2 = EvalwithMem(env, E1._2, r)
       val E = (E1, E2) match {
-        case (x: (IntVal, Mem), y: (IntVal, Mem)) => IntVal(x._1.n + y._1.n)
+        case ((x: IntVal, xm: Mem), (y: IntVal, ym: Mem)) => IntVal(x.n - y.n)
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       (E, E2._2)
     }
-    case Mul(l, r) =>{
+    case Mul(l, r) => {
       val E1 = EvalwithMem(env, mem, l)
       val E2 = EvalwithMem(env, E1._2, r)
       val E = (E1, E2) match {
-        case (x: (IntVal, Mem), y: (IntVal, Mem)) => IntVal(x._1.n + y._1.n)
+        case ((x: IntVal, xm: Mem), (y: IntVal, ym: Mem)) => IntVal(x.n * y.n)
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       (E, E2._2)
@@ -100,7 +101,7 @@ object MiniScalaInterpreter {
       val E1 = EvalwithMem(env, mem, l)
       val E2 = EvalwithMem(env, E1._2, r)
       val E = (E1, E2) match {
-        case (x: (IntVal, Mem), y: (IntVal, Mem)) => IntVal(x._1.n + y._1.n)
+        case ((x: IntVal, xm: Mem), (y: IntVal, ym: Mem)) => IntVal(x.n / y.n)
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       (E, E2._2)
@@ -109,7 +110,7 @@ object MiniScalaInterpreter {
       val E1 = EvalwithMem(env, mem, l)
       val E2 = EvalwithMem(env, E1._2, r)
       val E = (E1, E2) match {
-        case (x: (IntVal, Mem), y: (IntVal, Mem)) => BoolVal(x._1.n > y._1.n)
+        case ((x: IntVal, xm: Mem), (y: IntVal, ym: Mem)) => BoolVal(x.n > y.n)
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       (E, E2._2)
@@ -118,14 +119,14 @@ object MiniScalaInterpreter {
       val E1 = EvalwithMem(env, mem, l)
       val E2 = EvalwithMem(env, E1._2, r)
       val E = (E1, E2) match {
-        case (x: (IntVal, Mem), y: (IntVal, Mem)) => BoolVal(x._1.n >= y._1.n)
+        case ((x: IntVal, xm: Mem), (y: IntVal, ym: Mem)) => BoolVal(x.n >= y.n)
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       (E, E2._2)
     }
     case Iszero(c) => {
       val v = EvalwithMem(env, mem, c) match {
-        case (x: (IntVal, Mem)) => (BoolVal(x._1.n == 0), x._2)
+        case (x: IntVal, xm: Mem) => (BoolVal(x.n == 0), xm)
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       v
@@ -133,7 +134,7 @@ object MiniScalaInterpreter {
     case Ite(c, t, f) => {
       val E1 = EvalwithMem(env, mem, c)
       val E = E1 match {
-        case (x: (BoolVal, Mem)) => if (x._1.b) EvalwithMem(env, E1._2, t) else EvalwithMem(env, E1._2, f)
+        case (x: BoolVal, xm: Mem) => if (x.b) EvalwithMem(env, E1._2, t) else EvalwithMem(env, E1._2, f)
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       E
@@ -145,8 +146,8 @@ object MiniScalaInterpreter {
     }
     case VarExpr(name, value, body) => {
       val E1 = EvalwithMem(env, mem, value)
-      val new_mem = E1._2 + (??? -> E1._1) // location?
-      val new_env = env + (name -> ???)
+      val new_env = env + (name -> LocVal(E1._2.top))
+      val new_mem = E1._2.add(E1._2.top, E1._1)
       EvalwithMem(new_env, new_mem, body)
     }
     case Proc(v, expr) => (ProcVal(v, expr, env), mem)
@@ -156,7 +157,11 @@ object MiniScalaInterpreter {
     }
     case Asn(v, e) => {
       val E1 = EvalwithMem(env, mem, e)
-      val new_mem = E1._2 + (env(v) -> E1._1) // p(x)?
+      val p = env(v) match {
+        case LocVal(l) => l
+        case _ => throw new UndefinedSemantics(s"message ${expr}")
+      }
+      val new_mem = E1._2.add(p, E1._1)
       (E1._1, new_mem)
     }
     case Paren(expr) => EvalwithMem(env, mem, expr)
@@ -166,12 +171,12 @@ object MiniScalaInterpreter {
     }
     case PCall(ftn, arg) => {
       val proc = EvalwithMem(env, mem, ftn) match {
-        case (ProcVal(v, expr, env_prime), o1) => {
+        case (ProcVal(v, expr, env_prime), o1: Mem) => {
           val E2 = EvalwithMem(env, o1, arg)
           val new_env = env_prime + (v -> E2._1)
           EvalwithMem(new_env, E2._2, expr)
         }
-        case (RecProcVal(fv, av, body, env_prime), o1) => {
+        case (RecProcVal(fv, av, body, env_prime), o1: Mem) => {
           val E2 = EvalwithMem(env, o1, arg)
           val new_env = env_prime + (av -> E2._1) + (fv -> RecProcVal(fv, av, body, env_prime))
           EvalwithMem(new_env, E2._2, body)

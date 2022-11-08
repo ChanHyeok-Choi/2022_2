@@ -1,57 +1,11 @@
-[0m[[0m[31merror[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:70:8: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
+[0m[[0m[31merror[0m] [0m[0m/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw3/src/main/scala/Hw3.scala:68:14: constructor cannot be instantiated to expected type;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : hw3.Var[0m
+[0m[[0m[31merror[0m] [0m[0m required: hw3.Val[0m
+[0m[[0m[31merror[0m] [0m[0m        case Var(x) => Var(x)[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw3/src/main/scala/Hw3.scala:71:8: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Object[0m
 [0m[[0m[31merror[0m] [0m[0m required: hw3.Val[0m
 [0m[[0m[31merror[0m] [0m[0m      (p, mem)[0m
 [0m[[0m[31merror[0m] [0m[0m       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:148:34: value -> is not a member of Nothing[0m
-[0m[[0m[31merror[0m] [0m[0m      val new_mem = E1._2 + (??? -> E1._1) // location?[0m
-[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:159:37: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : (hw3.Val, hw3.Val)[0m
-[0m[[0m[31merror[0m] [0m[0m required: String[0m
-[0m[[0m[31merror[0m] [0m[0m      val new_mem = E1._2 + (env(v) -> E1._1) // p(x)?[0m
-[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:76:18: non-variable type argument hw3.IntVal in type pattern (hw3.IntVal, hw3.Mem) is unchecked since it is eliminated by erasure[0m
-[0m[[0m[33mwarn[0m] [0m[0m        case (x: (IntVal, Mem), y: (IntVal, Mem)) => IntVal(x._1.n + y._1.n)[0m
-[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:76:36: non-variable type argument hw3.IntVal in type pattern (hw3.IntVal, hw3.Mem) is unchecked since it is eliminated by erasure[0m
-[0m[[0m[33mwarn[0m] [0m[0m        case (x: (IntVal, Mem), y: (IntVal, Mem)) => IntVal(x._1.n + y._1.n)[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                   ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:85:18: non-variable type argument hw3.IntVal in type pattern (hw3.IntVal, hw3.Mem) is unchecked since it is eliminated by erasure[0m
-[0m[[0m[33mwarn[0m] [0m[0m        case (x: (IntVal, Mem), y: (IntVal, Mem)) => IntVal(x._1.n + y._1.n)[0m
-[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:85:36: non-variable type argument hw3.IntVal in type pattern (hw3.IntVal, hw3.Mem) is unchecked since it is eliminated by erasure[0m
-[0m[[0m[33mwarn[0m] [0m[0m        case (x: (IntVal, Mem), y: (IntVal, Mem)) => IntVal(x._1.n + y._1.n)[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                   ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:94:18: non-variable type argument hw3.IntVal in type pattern (hw3.IntVal, hw3.Mem) is unchecked since it is eliminated by erasure[0m
-[0m[[0m[33mwarn[0m] [0m[0m        case (x: (IntVal, Mem), y: (IntVal, Mem)) => IntVal(x._1.n + y._1.n)[0m
-[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:94:36: non-variable type argument hw3.IntVal in type pattern (hw3.IntVal, hw3.Mem) is unchecked since it is eliminated by erasure[0m
-[0m[[0m[33mwarn[0m] [0m[0m        case (x: (IntVal, Mem), y: (IntVal, Mem)) => IntVal(x._1.n + y._1.n)[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                   ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:103:18: non-variable type argument hw3.IntVal in type pattern (hw3.IntVal, hw3.Mem) is unchecked since it is eliminated by erasure[0m
-[0m[[0m[33mwarn[0m] [0m[0m        case (x: (IntVal, Mem), y: (IntVal, Mem)) => IntVal(x._1.n + y._1.n)[0m
-[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:103:36: non-variable type argument hw3.IntVal in type pattern (hw3.IntVal, hw3.Mem) is unchecked since it is eliminated by erasure[0m
-[0m[[0m[33mwarn[0m] [0m[0m        case (x: (IntVal, Mem), y: (IntVal, Mem)) => IntVal(x._1.n + y._1.n)[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                   ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:112:18: non-variable type argument hw3.IntVal in type pattern (hw3.IntVal, hw3.Mem) is unchecked since it is eliminated by erasure[0m
-[0m[[0m[33mwarn[0m] [0m[0m        case (x: (IntVal, Mem), y: (IntVal, Mem)) => BoolVal(x._1.n > y._1.n)[0m
-[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:112:36: non-variable type argument hw3.IntVal in type pattern (hw3.IntVal, hw3.Mem) is unchecked since it is eliminated by erasure[0m
-[0m[[0m[33mwarn[0m] [0m[0m        case (x: (IntVal, Mem), y: (IntVal, Mem)) => BoolVal(x._1.n > y._1.n)[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                   ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:121:18: non-variable type argument hw3.IntVal in type pattern (hw3.IntVal, hw3.Mem) is unchecked since it is eliminated by erasure[0m
-[0m[[0m[33mwarn[0m] [0m[0m        case (x: (IntVal, Mem), y: (IntVal, Mem)) => BoolVal(x._1.n >= y._1.n)[0m
-[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:121:36: non-variable type argument hw3.IntVal in type pattern (hw3.IntVal, hw3.Mem) is unchecked since it is eliminated by erasure[0m
-[0m[[0m[33mwarn[0m] [0m[0m        case (x: (IntVal, Mem), y: (IntVal, Mem)) => BoolVal(x._1.n >= y._1.n)[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                   ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:128:18: non-variable type argument hw3.IntVal in type pattern (hw3.IntVal, hw3.Mem) is unchecked since it is eliminated by erasure[0m
-[0m[[0m[33mwarn[0m] [0m[0m        case (x: (IntVal, Mem)) => (BoolVal(x._1.n == 0), x._2)[0m
-[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/chanhyeok/Scala/hw3/src/main/scala/Hw3.scala:136:18: non-variable type argument hw3.BoolVal in type pattern (hw3.BoolVal, hw3.Mem) is unchecked since it is eliminated by erasure[0m
-[0m[[0m[33mwarn[0m] [0m[0m        case (x: (BoolVal, Mem)) => if (x._1.b) EvalwithMem(env, E1._2, t) else EvalwithMem(env, E1._2, f)[0m
-[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m14 warnings found[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

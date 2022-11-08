@@ -1,4 +1,4 @@
-// Generated from /home/chanhyeok/Scala/hw3/src/main/antlr4/MiniScalaLexer.g4 by ANTLR 4.8
+// Generated from /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw3/src/main/antlr4/MiniScalaLexer.g4 by ANTLR 4.8
 package hw3;
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;

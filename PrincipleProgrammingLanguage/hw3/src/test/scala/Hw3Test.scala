@@ -42,7 +42,8 @@ val miniScalaTestCases = List(
       ,(s"{${fibo}; (fibo 10)}",IntVal(34))
     )
   test("Hw3.parser") {  
-    miniScalaTestCases.foreach((a: (String, Val)) => {assert(MiniScalaInterpreter(a._1) === a._2)} )
+    miniScalaTestCases.foreach((a: (String, Val)) => {
+      assert(MiniScalaInterpreter(a._1) === a._2)} )
     assertThrows[Exception] {
       MiniScalaInterpreter("(iszero 1) + 1")
     }

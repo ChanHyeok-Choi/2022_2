@@ -1,0 +1,327 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "root",
+        "directory": "/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw3",
+        "workspaceDir": "/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw3",
+        "sources": [
+            "/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw3/src/main/scala-2.13",
+            "/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw3/src/main/scala",
+            "/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw3/src/main/java",
+            "/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw3/target/scala-2.13/src_managed/main",
+            "/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw3/target/scala-2.13/src_managed/main/antlr4"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar",
+            "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.8-1/antlr4-runtime-4.8-1.jar",
+            "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fastparse_2.13/2.2.2/fastparse_2.13-2.2.2.jar",
+            "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4/4.8-1/antlr4-4.8-1.jar",
+            "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.1.7/sourcecode_2.13-0.1.7.jar",
+            "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_2.13/0.4.2/geny_2.13-0.4.2.jar",
+            "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar",
+            "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/ST4/4.3/ST4-4.3.jar",
+            "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/abego/treelayout/org.abego.treelayout.core/1.0.3/org.abego.treelayout.core-1.0.3.jar",
+            "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar",
+            "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/com/ibm/icu/icu4j/61.1/icu4j-61.1.jar"
+        ],
+        "out": "/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw3/.bloop/root",
+        "classesDir": "/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw3/.bloop/root/scala-2.13/classes",
+        "resources": [
+            "/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw3/src/main/resources",
+            "/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw3/target/scala-2.13/resource_managed/main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.13.3",
+            "options": [
+                
+            ],
+            "jars": [
+                "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar",
+                "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar",
+                "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar",
+                "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar",
+                "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/usr/lib/jvm/java-11-openjdk-amd64",
+                "options": [
+                    "-Duser.dir=/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw3"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.antlr",
+                    "name": "antlr4-runtime",
+                    "version": "4.8-1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "antlr4-runtime",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.8-1/antlr4-runtime-4.8-1.jar"
+                        },
+                        {
+                            "name": "antlr4-runtime",
+                            "classifier": "sources",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.8-1/antlr4-runtime-4.8-1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "fastparse_2.13",
+                    "version": "2.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "fastparse_2.13",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fastparse_2.13/2.2.2/fastparse_2.13-2.2.2.jar"
+                        },
+                        {
+                            "name": "fastparse_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fastparse_2.13/2.2.2/fastparse_2.13-2.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.antlr",
+                    "name": "antlr4",
+                    "version": "4.8-1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "antlr4",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4/4.8-1/antlr4-4.8-1.jar"
+                        },
+                        {
+                            "name": "antlr4",
+                            "classifier": "sources",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4/4.8-1/antlr4-4.8-1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "sourcecode_2.13",
+                    "version": "0.1.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sourcecode_2.13",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.1.7/sourcecode_2.13-0.1.7.jar"
+                        },
+                        {
+                            "name": "sourcecode_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.1.7/sourcecode_2.13-0.1.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "geny_2.13",
+                    "version": "0.4.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "geny_2.13",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_2.13/0.4.2/geny_2.13-0.4.2.jar"
+                        },
+                        {
+                            "name": "geny_2.13",
+                            "classifier": "sources",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_2.13/0.4.2/geny_2.13-0.4.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.antlr",
+                    "name": "antlr-runtime",
+                    "version": "3.5.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "antlr-runtime",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar"
+                        },
+                        {
+                            "name": "antlr-runtime",
+                            "classifier": "sources",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.antlr",
+                    "name": "ST4",
+                    "version": "4.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ST4",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/ST4/4.3/ST4-4.3.jar"
+                        },
+                        {
+                            "name": "ST4",
+                            "classifier": "sources",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/ST4/4.3/ST4-4.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.abego.treelayout",
+                    "name": "org.abego.treelayout.core",
+                    "version": "1.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "org.abego.treelayout.core",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/abego/treelayout/org.abego.treelayout.core/1.0.3/org.abego.treelayout.core-1.0.3.jar"
+                        },
+                        {
+                            "name": "org.abego.treelayout.core",
+                            "classifier": "sources",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/abego/treelayout/org.abego.treelayout.core/1.0.3/org.abego.treelayout.core-1.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.glassfish",
+                    "name": "javax.json",
+                    "version": "1.0.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javax.json",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar"
+                        },
+                        {
+                            "name": "javax.json",
+                            "classifier": "sources",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/glassfish/javax.json/1.0.4/javax.json-1.0.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.ibm.icu",
+                    "name": "icu4j",
+                    "version": "61.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "icu4j",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/com/ibm/icu/icu4j/61.1/icu4j-61.1.jar"
+                        },
+                        {
+                            "name": "icu4j",
+                            "classifier": "sources",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/com/ibm/icu/icu4j/61.1/icu4j-61.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.3",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/chanhyeok/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}
