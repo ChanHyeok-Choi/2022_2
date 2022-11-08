@@ -1,0 +1,11 @@
+Writer: 20181257 ChanHyeok Choi
+
+According to k, i.e., k-ary Tree, a children of each node will increase by k:
+    1 + k + k^2 + ... + k^(m-1) <= n
+    (k^m - 1) / (k - 1) <= n
+    k^m <= n * (k - 1) + 1, because k >= 2
+    m >= log_k (n * (k - 1) + 1)
+
+Neglecting constants, we know the height of k-ary tree is log_k (n).
+By inserting and removing function, the k_heap will be restored with upHeap() and downHeap().
+So, the running time will be log_k (n) time.
