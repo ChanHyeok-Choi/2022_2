@@ -81,6 +81,22 @@ public:
         delete oldNode;
         n--;
     }
+    void erase(int i) {
+        if(empty())
+            throw "DequeEmpty";
+        deque_node<T>* eraseNode = head->next;
+        int cnt = 0;
+        while(cnt != i) {
+            eraseNode = eraseNode->next;
+            cnt++;
+        }
+        deque_node<T>* tempNextNode = eraseNode->next;
+        deque_node<T>* tempPrevNode = eraseNode->prev;
+        tempNextNode->prev = tempPrevNode;
+        tempPrevNode->next = tempNextNode;
+        delete eraseNode;
+        n--;
+    }
 };
 
 #endif
