@@ -1,9 +1,9 @@
 # Writer: 20181257 ChanHyeok Choi\
-  This is Makefile for that contains BoyerMooreMatch.cpp and clean method for building and clearing all file made from "make".
+  This is Makefile for that contains 3.cpp and clean method for building and clearing all file made from "make".
 
 CC = g++
-TARGET = main
-OBJS = BoyerMooreMatch.o
+TARGET = 3
+OBJS = 3.o
 CXXFLAGS += -Wall -std=c++17 -g -pedantic
 
 all : $(TARGET)
