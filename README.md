@@ -1,1 +1,1 @@
-# UNIST 2022학년도 2학기 전공 과목 정리
+# UNIST 2022_2 Major Subjects' Assignments
