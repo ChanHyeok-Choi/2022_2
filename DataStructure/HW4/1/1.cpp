@@ -27,15 +27,17 @@ deque<int> Merge(deque<int> S1, deque<int> S2) {
 
 deque<int> MergeSort(deque<int> S, int n) {
     if (S.size() > 1) {
-        deque<int> S1, S2;
+        deque<int> S1;
+        deque<int> S2;
+        // divide and conquer
         // Partition S into S1 and S2
-        for (size_t i = 0; i < (size_t)n/2; i++) {
+        for (int i = 0; i < (int)n/2; i++) {
             S1.push_back(S.at(i));
-            S2.push_back(S.at(i + n/2));
+            S2.push_back(S.at(i + (int)n/2));
         }
         // Recur S1 and S2 until size is 1 or 0
-        S1 = MergeSort(S1, n/2);
-        S2 = MergeSort(S2, n/2);
+        S1 = MergeSort(S1, (int)n/2);
+        S2 = MergeSort(S2, (int)n/2);
         // Merge S1 and S2 into new S
         S = Merge(S1, S2);
     }

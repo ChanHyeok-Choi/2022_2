@@ -24,12 +24,12 @@ public:
         head->next = tail;
         tail->prev = head;
     }
-    ~deque() {
-        while(!empty()) 
-            pop_front();
-        delete head;
-        delete tail;
-    }
+    // ~deque() {
+    //     while(!empty()) 
+    //         pop_front();
+    //     delete head;
+    //     delete tail;
+    // }
     int size() { return n; }
     bool empty() { return n == 0; }
     T front() { return head->next->elem; }
@@ -45,37 +45,41 @@ public:
     }
     void push_front(T e) {
         deque_node<T>* newNode = new deque_node<T>;
-        newNode->elem = e;
         deque_node<T>* tempNode = head->next;
+        newNode->elem = e;
         head->next = newNode;
         newNode->prev = head;
         tempNode->prev = newNode;
         newNode->next = tempNode;
+        n++;
     }
     void push_back(T e) {
         deque_node<T>* newNode = new deque_node<T>;
-        newNode->elem = e;
         deque_node<T>* tempNode = tail->prev;
-        tail->prev = newNode;
+        newNode->elem = e;
         newNode->next = tail;
+        tail->prev = newNode;
         tempNode->next = newNode;
         newNode->prev = tempNode;
+        n++;
     }
-    T pop_front() {
+    void pop_front() {
+        if(empty())
+            throw "DequeEmpty";
         deque_node<T>* oldNode = head->next;
-        T pop = oldNode->elem;
-        head->next = oldNode->next;
         oldNode->next->prev = head;
+        head->next = oldNode->next;
         delete oldNode;
-        return pop;
+        n--;
     }
-    T pop_back() {
+    void pop_back() {
+        if(empty())
+            throw "DequeEmpty";
         deque_node<T>* oldNode = tail->prev;
-        T pop = oldNode->elem;
-        tail->prev = oldNode->prev;
         oldNode->prev->next = tail;
+        tail->prev = oldNode->prev;
         delete oldNode;
-        return pop;
+        n--;
     }
 };
 
