@@ -1,0 +1,91 @@
+Writer: 20181257 ChanHyeok Choi
+Date: 10/3/2022
+
+This is a Solution for Data Structure Assignment 2-4, Hanoi Tower problem.
+
+It is based on a recursive function, as called HanoiTower(int n, int a, int b, int c).
+    - n : total disks on a peg.
+    - a : a peg of 'a', as known as a start disk.
+    - b : a peg of 'b', as known as a middle disk.
+    - c : a peg of 'c', as known as a end disk.
+A recursive function means that 'f(n)' should have a process of 'f(n-1)'.
+    1. If n is 1, a disk on 'a' should be moved onto 'c'. (Base case)
+    2. If n is 2, a smallest disk on 'a' should be moved onto 'b'. (First case)
+    And then, a largest disk on 'a' should be moved onto 'c'. (Base case)
+    Lastly, a last disk on 'b' should be moved onto 'c'. (Second case)
+    3. If n is 3, a smallest disk on 'a' should be moved onto 'b'. (First case)
+    And then, a second disk on 'a' should be moved onto 'c'. (Base case)
+    And then, a smallest disk on 'b' should be moved onto 'c'. (Second case)
+    Eventually, a largest disk on 'a' should be moved onto 'b'. (First case)
+    And then, a smallest disk on 'b' should be moved onto 'a'. (Base case)
+    And then, a second disk on 'b' should be moved onto 'c'. (Second case)
+    Finally, a smallest disk on 'a' should be moved onto 'c'. (Base case)
+    4...
+    5...
+    ...
+
+This process is repeated since it is a recursive function.
+So, there is a base case for moving n'th disk from 'a' onto 'b'.
+Otherwise, we have to do two steps.
+    1. For movement of n'th disk, move n-1'th disk from 'a' onto 'b'.
+    2. Then, move n-1'th disk from 'b' onto 'a'.
+
+In short, 
+    f(n, start, mid, end) = {
+        f(1, start, mid, end), // n == 1
+        f(n-1, start, end, mid) + move(n, start, mid, end) + f(n-1, mid, start, end) // n != 1
+    }
+
+So, for example, let a number of disks is 3.
+Step 1: a → c
+Step 2: a → b
+Step 3: c → b
+Step 4: a → c
+Step 5: b → a
+Step 6: b → c
+Step 7: a → c
+-------------------
+<PEG>   a   b   c
+Step 0: 3   0   0
+Step 1: 2   0   1
+Step 2: 1   1   1
+Step 3: 1   2   0
+Step 4: 0   2   1
+Step 5: 1   1   1
+Step 6: 1   0   2
+Step 7: 0   0   3
+
+So, for example, let a number of disks is 4.
+Step 1: a → b
+Step 2: a → c
+Step 3: b → c
+Step 4: a → b
+Step 5: c → a
+Step 6: c → b
+Step 7: a → b
+Step 8: a → c
+Step 9: b → c
+Step 10: b → a
+Step 11: c → a
+Step 12: b → c
+Step 13: a → b
+Step 14: a → c
+Step 15: b → c
+-------------------
+<PEG>   a   b   c
+Step 0: 4   0   0
+Step 1: 3   1   0
+Step 2: 2   1   1
+Step 3: 2   0   2
+Step 4: 1   1   2
+Step 5: 2   1   1
+Step 6: 2   2   0
+Step 7: 1   3   0
+Step 8: 0   3   1
+Step 9: 0   2   2
+Step 10: 1   1   2
+Step 11: 2   1   1
+Step 12: 2   0   2
+Step 13: 1   1   2
+Step 14: 0   1   3
+Step 15: 0   0   4
