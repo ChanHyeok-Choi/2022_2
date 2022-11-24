@@ -100,7 +100,6 @@ int main() {
     // Implement LCS Algorithm
     Arr LCS_arr;
     LCS_arr = LCS(DNA1, DNA2);
-    cout << '\n';
 
     // Print LCS array
     cout << "<----- LCS array ----->\n";
@@ -115,14 +114,16 @@ int main() {
     int i = 10, j = 10;
     string subsequence = "";
     while(i != 0 and j != 0) {
-        // cout << "check " << i << ' ' << j << ' ';
-        if(LCS_arr[i][j] == LCS_arr[i][j-1]) {
-            j--;
-            // cout << "and move " << i << ' ' << j << ' ' << "(" << LCS_arr[i][j] << ")" << '\n';
-        } else {
-            subsequence = DNA2[j-1] + subsequence;
+        // cout << i << ", " << j << ": " << subsequence << '\n';
+        if(DNA1[i-1] == DNA2[j-1]) {
+            subsequence = DNA1[i-1] + subsequence;
             i--; j--;
-            // cout << "and record and up " << i << ' ' << j << ' ' << "(" << LCS_arr[i][j] << ")" << '\n';
+        } else {
+            if(LCS_arr[i-1][j] >= LCS_arr[i][j-1]) {
+                i--;
+            } else { // LCS_arr[i-1][j] < LCS_arr[i][j-1]
+                j--;
+            }
         }
     }
     cout << "Length of LCS: " << LCS_arr[10][10] << '\n';
