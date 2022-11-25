@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0m/home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala:309:61: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : hw4.Val[0m
+[0m[[0m[31merror[0m] [0m[0m required: hw4.RecordValLike[0m
+[0m[[0m[31merror[0m] [0m[0m      Result(RecordVal(field, loc, eval(env, new_mem, next).v), new_mem)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

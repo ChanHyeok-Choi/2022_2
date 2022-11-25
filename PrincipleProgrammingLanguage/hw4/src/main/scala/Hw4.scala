@@ -3,6 +3,7 @@ package hw4
 import scala.collection.immutable.HashMap 
 import hw4._
 import scala.collection.mutable.ReusableBuilder
+import com.ibm.icu.text.AlphabeticIndex.Record
 
 
 package object hw4 {
@@ -80,6 +81,44 @@ object MiniCInterpreter {
   case class UndefinedSemantics(msg: String = "", cause: Throwable = None.orNull) extends Exception("Undefined Semantics: " ++ msg, cause)
     
   
+  def UpdatePCALLV(exprs: List[Expr], xs: List[Var], env: Env, _env: Env, _mem: Mem): (Env, Mem) = exprs match {
+    case Nil => (_env, _mem)
+    case head_E :: next_E => {
+      val E_n = eval(env, _mem, head_E)
+      xs match {
+        case Nil => throw new UndefinedSemantics(s"message $E_n}")
+        case head_x :: next_x => {
+          val (new_mem, new_loc) = E_n.m.extended(E_n.v)
+          val new_env = _env + (head_x -> new_loc)
+          UpdatePCALLV(next_E, next_x, env, new_env, new_mem)
+        }
+      }
+    }
+  }
+
+  def UpdateEnvPCALLR(ys: List[Var], xs: List[Var], env: Env, _env: Env): Env = ys match {
+    case Nil => _env
+    case head_y :: next_y => {
+      env.get(head_y) match {
+        case None => throw new UndefinedSemantics(s"message ${head_y}")
+        case Some(value) => {
+          xs match {
+            case Nil => throw new UndefinedSemantics(s"message ${xs}")
+            case head_x :: next_x => {
+              val new_env = _env + (head_x -> value)
+              UpdateEnvPCALLR(next_y, next_x, env, new_env)
+            }
+          }
+        }
+      }
+    }
+  }
+
+  def findVar(r: RecordValLike, x: Var): LocVal = r match {
+    case EmptyRecordVal => throw new UndefinedSemantics(s"message ${r}")
+    case RecordVal(field, loc, next) => if (field == x) loc else findVar(next, x)
+  }
+
   def eval(env: Env, mem: Mem, expr: Expr): Result = expr match { // Result = Result(SkipVal, mem)
     case Skip => Result(SkipVal, mem)
     case False => Result(BoolVal(false), mem)
@@ -87,11 +126,11 @@ object MiniCInterpreter {
     case NotExpr(expr_prime) => {
       val E = eval(env, mem, expr_prime) match {
         case Result(v, m) => v match {
-          case BoolVal(b) => if (b == true) Result(true, m) else Result(false, m)
+          case BoolVal(b) => if (b == true) Result(BoolVal(false), m) else Result(BoolVal(true), m)
           case _ => throw new UndefinedSemantics(s"message ${expr}")
         }
       }
-      Result(E.v, E.m)
+      E
     }
     case Const(n) => Result(IntVal(n), mem)
     case Var(s) => {
@@ -99,13 +138,13 @@ object MiniCInterpreter {
         case (x: LocVal) => mem.m(x)
         case _ => env(Var(s))
       }
-      (p, mem)
+      Result(p, mem)
 		}
     case Add(l, r) => {
       val E1 = eval(env, mem, l)
       val E2 = eval(env, E1.m, r)
       val E = (E1, E2) match {
-        case ((x: IntVal, xm: Mem), (y: IntVal, ym: Mem)) => IntVal(x.n + y.n)
+        case (Result(x: IntVal, xm: Mem), Result(y: IntVal, ym: Mem)) => IntVal(x.n + y.n)
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       Result(E, E2.m)
@@ -114,7 +153,7 @@ object MiniCInterpreter {
       val E1 = eval(env, mem, l)
       val E2 = eval(env, E1.m, r)
       val E = (E1, E2) match {
-        case ((x: IntVal, xm: Mem), (y: IntVal, ym: Mem)) => IntVal(x.n - y.n)
+        case (Result(x: IntVal, xm: Mem), Result(y: IntVal, ym: Mem)) => IntVal(x.n - y.n)
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       Result(E, E2.m)
@@ -123,7 +162,7 @@ object MiniCInterpreter {
       val E1 = eval(env, mem, l)
       val E2 = eval(env, E1.m, r)
       val E = (E1, E2) match {
-        case ((x: IntVal, xm: Mem), (y: IntVal, ym: Mem)) => IntVal(x.n * y.n)
+        case (Result(x: IntVal, xm: Mem), Result(y: IntVal, ym: Mem)) => IntVal(x.n * y.n)
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       Result(E, E2.m)
@@ -132,7 +171,7 @@ object MiniCInterpreter {
       val E1 = eval(env, mem, l)
       val E2 = eval(env, E1.m, r)
       val E = (E1, E2) match {
-        case ((x: IntVal, xm: Mem), (y: IntVal, ym: Mem)) => IntVal(x.n / y.n)
+        case (Result(x: IntVal, xm: Mem), Result(y: IntVal, ym: Mem)) => IntVal(x.n / y.n)
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       Result(E, E2.m)
@@ -141,7 +180,7 @@ object MiniCInterpreter {
       val E1 = eval(env, mem, l)
       val E2 = eval(env, E1.m, r)
       val E = (E1, E2) match {
-        case ((n1: IntVal, n1m: Mem), (n2: IntVal, n2m: Mem)) => BoolVal(n1 <= n2)
+        case (Result(n1: IntVal, n1m: Mem), Result(n2: IntVal, n2m: Mem)) => BoolVal(n1.n <= n2.n)
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       Result(E, E2.m)
@@ -150,9 +189,9 @@ object MiniCInterpreter {
       val E1 = eval(env, mem, l)
       val E2 = eval(env, E1.m, r)
       val E = (E1, E2) match {
-        case ((n1: IntVal, n1m: Mem), (n2: IntVal, n2m: Mem)) => BoolVal(n1 == n2)
-        case ((b1: BoolVal, b1m: Mem), (b2: BoolVal, b2m: Mem)) => BoolVal(b1 == b2)
-        case ((skip1: SkipVal, skip1m: Mem), (skip2: SkipVal, skip2m: Mem)) => BoolVal(skip1 == skip2)
+        case (Result(n1: IntVal, n1m: Mem), Result(n2: IntVal, n2m: Mem)) => BoolVal(n1.n == n2.n)
+        case (Result(b1: BoolVal, b1m: Mem), Result(b2: BoolVal, b2m: Mem)) => BoolVal(b1.b == b2.b)
+        // case (Result(skip1: SkipVal, skip1m: Mem), Result(skip2: SkipVal, skip2m: Mem)) => BoolVal(skip1 == skip2)
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       Result(E, E2.m)
@@ -167,7 +206,7 @@ object MiniCInterpreter {
     case Ite(c, t, f) => {
       val E1 = eval(env, mem, c)
       val E = E1 match {
-        case Result(x: BoolVal, xm: Mem) => if (x.b) eval(env, E1._2, t) else eval(env, E1._2, f)
+        case Result(x: BoolVal, xm: Mem) => if (x.b) eval(env, E1.m, t) else eval(env, E1.m, f)
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       E
@@ -182,36 +221,96 @@ object MiniCInterpreter {
     case Proc(args, expr) => Result(ProcVal(args, expr, env), mem)
     case Asn(v, e) => {
       val E = eval(env, mem, e)
-      val (new_mem, loc) = E.m.extended(E1.v)
-      // p(x)?
-      Result(E.v, new_mem)
+      env.get(v) match {
+        case None => throw new UndefinedSemantics(s"message ${expr}")
+        case Some(value) => E.m.updated(value, E.v) match {
+          case None => throw new UndefinedSemantics(s"message ${expr}")
+          case Some(value) => Result(E.v, value)
+        }
+      }
     }
     case BeginEnd(expr) => eval(env, mem, expr)
     case FieldAccess(record, field) => {
-
+      val E = eval(env, mem, record)
+      val E_prime = E.v match {
+        case RecordVal(x, loc, next) => {
+          if (x == field) E.m.get(loc) match {
+            case None => throw new UndefinedSemantics(s"message ${expr}")
+            case Some(value) => Result(value, E.m)
+          }
+          else E.m.get(findVar(next, field)) match {
+            case None => throw new UndefinedSemantics(s"message ${expr}")
+            case Some(value) => Result(value, E.m)
+          }
+        }
+        case _ => throw new UndefinedSemantics(s"message ${expr}")
+      }
+      E_prime
     }
     case FieldAssign(record, field, new_val) => {
-
+      val E1 = eval(env, mem, record)
+      val E2 = eval(env, E1.m, new_val)
+      val loc = E1.v match {
+        case RecordVal(x, loc, next) => {
+          if (x == field) loc
+          else findVar(next, field)
+        }
+        case _ => throw new UndefinedSemantics(s"message ${expr}")
+      }
+      val new_mem = E2.m.updated(loc, E2.v) match {
+        case None => throw new UndefinedSemantics(s"message ${expr}")
+        case Some(value) => value
+      }
+      Result(E2.v, new_mem)
     }
     case Block(f, s) => {
-
+      val E1 = eval(env, mem, f)
+      eval(env, E1.m, s)
     }
     case PCallV(ftn, arg) => {
-
-    }
-    case PCallR(ftn, arg) => {
-
-    }
-    case WhileExpr(cond, body) => {
-      val E1 = eval(env, mem, cond)
-      val E2 = eval(env, E1.m, body)
-      val E = E1.v match {
-        case BoolVal(b) => if (b == true) {
-          
-        } else Result(SkipVal, E1.m)
+      val E0 = eval(env, mem, ftn)
+      val E = E0.v match {
+        case ProcVal(args, expr_0, env_prime) => {
+          val (cal_env, cal_mem) = UpdatePCALLV(arg, args, env, env_prime, mem)
+          eval(cal_env, cal_mem, expr_0)
+        }
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       E
+    }
+    case PCallR(ftn, arg) => {
+      // how to process a list of arg??
+      val E0 = eval(env, mem, ftn)
+      val E = E0.v match {
+        case ProcVal(args, expr_0, env_prime) => {
+          val cal_env = UpdateEnvPCALLR(arg, args, env, env_prime)
+          eval(cal_env, E0.m, expr_0)
+        }
+        case _ => throw new UndefinedSemantics(s"message ${expr}")
+      }
+      E
+    }
+    case WhileExpr(cond, body) => {
+      val E1 = eval(env, mem, cond)
+      val E = E1.v match {
+        case BoolVal(b) => if (b == true) {
+          val E2 = eval(env, E1.m, body)
+          Result(SkipVal, eval(env, E2.m, WhileExpr(cond, body)).m)
+        } else Result(SkipVal, E1.m) // b == false
+        case _ => throw new UndefinedSemantics(s"message ${expr}")
+      }
+      E
+    }
+    case EmptyRecordExpr => Result(EmptyRecordVal, mem)
+    case RecordExpr(field, initVal, next) => {
+      val E = eval(env, mem, initVal)
+      val (new_mem, loc) = E.m.extended(E.v)
+      val new_env = env + (field -> loc)
+      val E_prime = eval(env, new_mem, next).v match {
+        case RecordVal(field, loc, next_val) => RecordVal(field, loc, next_val)
+        case _ => throw new UndefinedSemantics(s"message ${expr}")
+      }
+      Result(E_prime, new_mem)
     }
     case _ => throw new UndefinedSemantics(s"message ${expr}")
   }

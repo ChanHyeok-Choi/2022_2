@@ -1,0 +1,1258 @@
+2022.11.25 19:33:05 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/lsp.trace.json or /home/chan4184/.cache/metals/lsp.trace.json[0m
+2022.11.25 19:33:05 INFO  logging to file /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/metals.log[0m
+2022.11.25 19:33:05 INFO  Started: Metals version 0.11.9 in workspace '/home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4' for client Visual Studio Code 1.73.1.[0m
+2022.11.25 19:33:07 INFO  time: initialize in 1.64s[0m
+2022.11.25 19:33:09 WARN  Build server is not auto-connectable.[0m
+2022.11.25 19:33:09 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 19:33:12 INFO  no build target found for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala. Using presentation compiler with project's scala-library version: 3.2.0[0m
+2022.11.25 19:33:16 INFO  time: code lens generation in 2.51s[0m
+2022.11.25 19:33:16 INFO  time: code lens generation in 6.38s[0m
+2022.11.25 19:34:09 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 7:34:39 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1576)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1574)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+Nov 25, 2022 7:34:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1576)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1574)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+Nov 25, 2022 7:34:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala:2: error: illegal character '\u2026'
+Search or jump to…
+                 ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchOther$1(LegacyScanner.scala:501)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:506)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:245)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:287)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:50)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:40)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:96)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:286)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:206)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:206)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:201)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$definitionOrReferences$1(MetalsLanguageServer.scala:2600)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLanguageServer.definitionOrReferences(MetalsLanguageServer.scala:2596)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$definition$1(MetalsLanguageServer.scala:1490)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.definition(MetalsLanguageServer.scala:1489)
+	... 16 more
+
+Nov 25, 2022 7:34:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala:2: error: illegal character '\u2026'
+Search or jump to…
+                 ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchOther$1(LegacyScanner.scala:501)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:506)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:245)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:287)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:50)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:40)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:96)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:286)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:206)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:206)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:201)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$definitionOrReferences$1(MetalsLanguageServer.scala:2600)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLanguageServer.definitionOrReferences(MetalsLanguageServer.scala:2596)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$definition$1(MetalsLanguageServer.scala:1490)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.definition(MetalsLanguageServer.scala:1489)
+	... 16 more
+
+Nov 25, 2022 7:34:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 46
+Nov 25, 2022 7:34:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala:2: error: illegal character '\u2026'
+Search or jump to…
+                 ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchOther$1(LegacyScanner.scala:501)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:506)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:245)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:287)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:50)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:40)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:96)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:286)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$3(DefinitionProvider.scala:206)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:206)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:201)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$definitionOrReferences$1(MetalsLanguageServer.scala:2600)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLanguageServer.definitionOrReferences(MetalsLanguageServer.scala:2596)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$definition$1(MetalsLanguageServer.scala:1490)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.definition(MetalsLanguageServer.scala:1489)
+	... 16 more
+
+Exception in thread "pool-3-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022.11.25 19:51:41 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 19:53:57 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 19:55:21 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 19:55:36 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 7:56:43 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1548)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1616)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1616)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1576)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1574)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1619)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1576)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1574)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.11.25 19:57:01 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 19:57:11 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 9:25:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 759
+Exception in thread "pool-3-thread-2" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022.11.25 21:30:07 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 9:30:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1156
+2022.11.25 21:30:07 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 9:40:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1263
+Nov 25, 2022 9:47:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1749
+2022.11.25 21:48:47 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 21:57:14 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 9:59:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2787
+Nov 25, 2022 10:04:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3532
+2022.11.25 22:05:21 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:09:17 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 10:09:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1576)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1574)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1576)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1574)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1619)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1576)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1574)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.11.25 22:09:46 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:11:39 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 10:12:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4350
+2022.11.25 22:12:44 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 10:13:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4553
+2022.11.25 22:13:39 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 10:15:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4890
+2022.11.25 22:15:57 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 10:16:02 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1619)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1576)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1574)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+Nov 25, 2022 10:16:17 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1574)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.11.25 22:16:37 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 10:17:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1619)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1576)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1574)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.11.25 22:21:00 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/test/scala/Hw4Test.scala[0m
+2022.11.25 22:24:00 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:26:18 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:27:09 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:27:09 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:27:58 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:28:22 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:29:06 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:29:57 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:30:21 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:30:56 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:32:06 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:32:41 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:32:44 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:32:48 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 10:33:14 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2499)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.isForComprehensionOwner$1(PcDocumentHighlightProvider.scala:163)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.collectNames$1(PcDocumentHighlightProvider.scala:178)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.$anonfun$4(PcDocumentHighlightProvider.scala:275)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1548)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1554)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1562)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1574)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1619)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1568)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1576)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1574)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1623)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1630)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1627)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.fold$1(Trees.scala:1535)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.apply(Trees.scala:1537)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1636)
+	at dotty.tools.dotc.ast.Trees$Instance$TreeAccumulator.foldOver(Trees.scala:1541)
+	at dotty.tools.dotc.ast.Trees$Instance$DeepFolder.apply(Trees.scala:1669)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider$.highlights(PcDocumentHighlightProvider.scala:276)
+
+2022.11.25 22:33:18 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:33:39 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:38:22 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:45:36 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:46:01 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:50:53 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:52:08 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:52:24 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 22:52:56 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Exception in thread "pool-3-thread-3" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022.11.25 22:55:08 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 23:03:29 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 23:04:19 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 23:04:19 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 11:04:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8289
+Nov 25, 2022 11:05:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8377
+2022.11.25 23:06:47 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 23:07:37 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 11:12:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9183
+Nov 25, 2022 11:12:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9190
+2022.11.25 23:13:19 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 11:13:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9325
+2022.11.25 23:13:46 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 23:14:24 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 23:15:06 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 23:16:19 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 23:17:32 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 23:17:51 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 23:18:50 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/test/scala/Hw4Test.scala[0m
+2022.11.25 23:19:16 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/test/scala/Hw4Test.scala[0m
+2022.11.25 23:19:16 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/test/scala/Hw4Test.scala[0m
+Nov 25, 2022 11:21:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9709
+2022.11.25 23:21:38 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 23:25:24 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 23:25:46 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 11:58:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9889
+2022.11.25 23:58:21 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 11:59:51 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2022.11.26 00:00:08 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 00:00:08 INFO  shutting down Metals[0m
+2022.11.26 00:00:08 ERROR Unexpected error initializing serverorg.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2022.11.26 00:00:27 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/lsp.trace.json or /home/chan4184/.cache/metals/lsp.trace.json[0m
+2022.11.26 00:00:27 INFO  logging to file /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/metals.log[0m
+2022.11.26 00:00:27 INFO  Started: Metals version 0.11.9 in workspace '/home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4' for client Visual Studio Code 1.73.1.[0m
+2022.11.26 00:00:29 INFO  time: initialize in 1.39s[0m
+2022.11.26 00:00:30 WARN  Build server is not auto-connectable.[0m
+2022.11.26 00:00:30 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 00:00:34 INFO  no build target found for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala. Using presentation compiler with project's scala-library version: 3.2.0[0m
+Nov 26, 2022 12:00:34 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2022.11.26 00:00:38 INFO  time: code lens generation in 3.78s[0m
+2022.11.26 00:00:44 INFO  running '/usr/lib/jvm/java-11-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals15311555825365624607/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2022.11.26 00:00:44 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/project/metals.sbt[0m
+2022.11.26 00:00:44 WARN  no build target for: /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/project/project/metals.sbt[0m
+2022.11.26 00:00:44 INFO  skipping build import with status 'Started'[0m
+2022.11.26 00:00:47 INFO  [info] welcome to sbt 1.3.13 (Ubuntu Java 11.0.17)[0m
+2022.11.26 00:00:49 INFO  [info] loading settings for project hw4-build-build-build from metals.sbt ...[0m
+2022.11.26 00:00:49 INFO  [info] loading project definition from /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/project/project/project[0m
+2022.11.26 00:00:55 INFO  [info] loading settings for project hw4-build-build from metals.sbt ...[0m
+2022.11.26 00:00:55 INFO  [info] loading project definition from /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/project/project[0m
+2022.11.26 00:01:00 INFO  [success] Generated .bloop/hw4-build-build.json[0m
+2022.11.26 00:01:00 INFO  [success] Total time: 5 s, completed Nov 26, 2022, 12:01:00 AM[0m
+2022.11.26 00:01:00 INFO  [info] loading settings for project hw4-build from sbt-antlr4.sbt,metals.sbt ...[0m
+2022.11.26 00:01:01 INFO  [info] loading project definition from /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/project[0m
+2022.11.26 00:01:02 INFO  [success] Generated .bloop/hw4-build.json[0m
+2022.11.26 00:01:02 INFO  [success] Total time: 1 s, completed Nov 26, 2022, 12:01:02 AM[0m
+2022.11.26 00:01:04 INFO  [info] loading settings for project root from build.sbt ...[0m
+2022.11.26 00:01:04 INFO  [info] set current project to hw4-cse271 (in build file:/home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/)[0m
+2022.11.26 00:01:08 INFO  [success] Generated .bloop/root.json[0m
+2022.11.26 00:01:08 INFO  [success] Generated .bloop/root-test.json[0m
+2022.11.26 00:01:08 INFO  [success] Total time: 3 s, completed Nov 26, 2022, 12:01:08 AM[0m
+2022.11.26 00:01:08 INFO  time: ran 'sbt bloopInstall' in 23s[0m
+2022.11.26 00:01:08 INFO  Attempting to connect to the build server...[0m
+2022.11.26 00:01:08 INFO  Setting up current java home /usr/lib/jvm/java-11-openjdk-amd64 in /home/chan4184/.bloop/bloop.json[0m
+2022.11.26 00:01:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/bsp.trace.json or /home/chan4184/.cache/metals/bsp.trace.json[0m
+2022.11.26 00:01:25 INFO  Attempting to connect to the build server...[0m
+2022.11.26 00:01:25 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/chan4184/.bloop/bloop.json[0m
+2022.11.26 00:01:25 INFO  Attempting to connect to the build server...[0m
+2022.11.26 00:01:25 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/chan4184/.bloop/bloop.json[0m
+2022.11.26 00:01:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/project/project/.metals/bsp.trace.json or /home/chan4184/.cache/metals/bsp.trace.json[0m
+2022.11.26 00:01:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/project/.metals/bsp.trace.json or /home/chan4184/.cache/metals/bsp.trace.json[0m
+2022.11.26 00:01:29 INFO  time: Connected to build server in 21s[0m
+2022.11.26 00:01:29 INFO  Connected to Build server: Bloop v1.5.4[0m
+2022.11.26 00:01:29 INFO  time: Imported build in 0.15s[0m
+2022.11.26 00:01:37 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2022.11.26 00:01:39 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2022.11.26 00:01:39 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2022.11.26 00:01:39 INFO  time: indexed workspace in 9.77s[0m
+2022.11.26 00:01:40 INFO  compiling root (2 scala sources and 4 java sources)[0m
+2022.11.26 00:01:46 INFO  Deduplicating compilation of root from bsp client 'Metals 0.11.9' (since 24.577s)[0m
+2022.11.26 00:01:46 INFO  compiling root (2 scala sources and 4 java sources)[0m
+2022.11.26 00:02:01 WARN  4 deprecations (since 2.13.0); re-run with -deprecation for details[0m
+2022.11.26 00:02:01 WARN  4 deprecations (since 2.13.0); re-run with -deprecation for details[0m
+2022.11.26 00:02:03 INFO  Deduplicating compilation of root-test from bsp client 'Metals 0.11.9' (since 41.196s)[0m
+2022.11.26 00:02:03 INFO  compiling root-test (1 scala source)[0m
+2022.11.26 00:02:03 INFO  compiling root-test (1 scala source)[0m
+2022.11.26 00:02:03 INFO  time: compiled root in 17s[0m
+2022.11.26 00:02:05 INFO  time: compiled root-test in 2.29s[0m
+2022.11.26 00:02:25 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-server.trace.json or /home/chan4184/.cache/metals/dap-server.trace.json[0m
+2022.11.26 00:02:25 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-client.trace.json or /home/chan4184/.cache/metals/dap-client.trace.json[0m
+2022.11.26 00:02:25 INFO  Starting debug proxy for [HweTest()][0m
+2022.11.26 00:02:26 INFO  Trying to attach to remote debuggee VM localhost:56493 .[0m
+2022.11.26 00:02:26 INFO  Attaching to debuggee VM succeeded.[0m
+2022.11.26 00:02:28 INFO  Canceling debug proxy for [HweTest()][0m
+2022.11.26 00:02:28 INFO  Closing debug server tcp://0.0.0.0:36673[0m
+2022.11.26 00:02:53 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-server.trace.json or /home/chan4184/.cache/metals/dap-server.trace.json[0m
+2022.11.26 00:02:53 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-client.trace.json or /home/chan4184/.cache/metals/dap-client.trace.json[0m
+2022.11.26 00:02:53 INFO  Starting debug proxy for [HweTest()][0m
+2022.11.26 00:02:54 INFO  Trying to attach to remote debuggee VM localhost:56729 .[0m
+2022.11.26 00:02:54 INFO  Attaching to debuggee VM succeeded.[0m
+2022.11.26 00:03:44 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+missing argument list for method UpdatePCALLV in object MiniCInterpreter
+Unapplied methods are only converted to functions when a function type is expected.
+You can make this conversion explicit by writing `UpdatePCALLV _` or `UpdatePCALLV(_,_,_,_,_)` instead of `UpdatePCALLV`..[0m
+2022.11.26 00:03:44 INFO  Canceling debug proxy for [HweTest()][0m
+2022.11.26 00:03:44 INFO  Closing debug server tcp://0.0.0.0:38101[0m
+2022.11.26 00:03:44 ERROR Failed to initialize communication: Socket closed[0m
+2022.11.26 00:18:40 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-server.trace.json or /home/chan4184/.cache/metals/dap-server.trace.json[0m
+2022.11.26 00:18:40 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-client.trace.json or /home/chan4184/.cache/metals/dap-client.trace.json[0m
+2022.11.26 00:18:41 INFO  Starting debug proxy for [HweTest()][0m
+2022.11.26 00:18:41 INFO  Trying to attach to remote debuggee VM localhost:44063 .[0m
+2022.11.26 00:18:41 INFO  Attaching to debuggee VM succeeded.[0m
+Nov 26, 2022 12:19:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 105
+2022.11.26 00:19:53 INFO  Canceling debug proxy for [HweTest()][0m
+2022.11.26 00:19:53 INFO  Closing debug server tcp://0.0.0.0:35873[0m
+2022.11.26 00:19:53 ERROR Failed to initialize communication: Socket closed[0m
+Nov 26, 2022 12:20:51 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 177
+2022.11.26 00:22:42 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-server.trace.json or /home/chan4184/.cache/metals/dap-server.trace.json[0m
+2022.11.26 00:22:42 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-client.trace.json or /home/chan4184/.cache/metals/dap-client.trace.json[0m
+2022.11.26 00:22:42 INFO  Starting debug proxy for [HweTest()][0m
+2022.11.26 00:22:43 INFO  Trying to attach to remote debuggee VM localhost:49349 .[0m
+2022.11.26 00:22:43 INFO  Attaching to debuggee VM succeeded.[0m
+2022.11.26 00:22:48 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+illegal start of statement.[0m
+2022.11.26 00:23:37 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+not found: value E2.[0m
+2022.11.26 00:23:39 ERROR Failed to initialize communication: Socket closed[0m
+2022.11.26 00:23:39 INFO  Canceling debug proxy for [HweTest()][0m
+2022.11.26 00:23:39 INFO  Closing debug server tcp://0.0.0.0:35103[0m
+Nov 26, 2022 12:25:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 370
+2022.11.26 00:26:43 INFO  compiling root (1 scala source)[0m
+2022.11.26 00:26:46 INFO  time: compiled root in 3.47s[0m
+Nov 26, 2022 12:29:46 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 861
+Exception in thread "pool-4-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Exception in thread "pool-4-thread-2" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Nov 26, 2022 12:34:24 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1498
+2022.11.26 00:37:56 INFO  compiling root (1 scala source)[0m
+2022.11.26 00:37:59 INFO  time: compiled root in 3.28s[0m
+Nov 26, 2022 12:38:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1966
+2022.11.26 00:40:13 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-server.trace.json or /home/chan4184/.cache/metals/dap-server.trace.json[0m
+2022.11.26 00:40:13 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-client.trace.json or /home/chan4184/.cache/metals/dap-client.trace.json[0m
+2022.11.26 00:40:13 INFO  Starting debug proxy for [HweTest()][0m
+2022.11.26 00:40:13 INFO  Trying to attach to remote debuggee VM localhost:33285 .[0m
+2022.11.26 00:40:13 INFO  Attaching to debuggee VM succeeded.[0m
+2022.11.26 00:41:49 INFO  Canceling debug proxy for [HweTest()][0m
+2022.11.26 00:41:49 ERROR Failed to initialize communication: Socket closed[0m
+2022.11.26 00:41:49 INFO  Closing debug server tcp://0.0.0.0:38571[0m
+2022.11.26 00:41:53 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-server.trace.json or /home/chan4184/.cache/metals/dap-server.trace.json[0m
+2022.11.26 00:41:53 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-client.trace.json or /home/chan4184/.cache/metals/dap-client.trace.json[0m
+2022.11.26 00:41:54 INFO  Starting debug proxy for [HweTest()][0m
+2022.11.26 00:41:54 INFO  Trying to attach to remote debuggee VM localhost:35523 .[0m
+2022.11.26 00:41:54 INFO  Attaching to debuggee VM succeeded.[0m
+2022.11.26 00:42:11 INFO  Canceling debug proxy for [HweTest()][0m
+2022.11.26 00:42:11 ERROR Failed to initialize communication: Socket closed[0m
+2022.11.26 00:42:11 INFO  Closing debug server tcp://0.0.0.0:33107[0m
+2022.11.26 00:42:19 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-server.trace.json or /home/chan4184/.cache/metals/dap-server.trace.json[0m
+2022.11.26 00:42:19 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-client.trace.json or /home/chan4184/.cache/metals/dap-client.trace.json[0m
+2022.11.26 00:42:20 INFO  Starting debug proxy for [HweTest()][0m
+2022.11.26 00:42:20 INFO  Trying to attach to remote debuggee VM localhost:53415 .[0m
+2022.11.26 00:42:20 INFO  Attaching to debuggee VM succeeded.[0m
+2022.11.26 00:42:23 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+not found: value E2.[0m
+2022.11.26 00:42:25 INFO  Canceling debug proxy for [HweTest()][0m
+2022.11.26 00:42:25 INFO  Closing debug server tcp://0.0.0.0:35443[0m
+2022.11.26 00:42:25 ERROR Failed to initialize communication: Socket closed[0m
+2022.11.26 00:42:29 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-server.trace.json or /home/chan4184/.cache/metals/dap-server.trace.json[0m
+2022.11.26 00:42:29 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-client.trace.json or /home/chan4184/.cache/metals/dap-client.trace.json[0m
+2022.11.26 00:42:29 INFO  Starting debug proxy for [HweTest()][0m
+2022.11.26 00:42:29 INFO  Trying to attach to remote debuggee VM localhost:59771 .[0m
+2022.11.26 00:42:29 INFO  Attaching to debuggee VM succeeded.[0m
+2022.11.26 00:42:35 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+class scala.reflect.internal.Trees$Block cannot be cast to class scala.reflect.api.Trees$CaseDefApi (scala.reflect.internal.Trees$Block and scala.reflect.api.Trees$CaseDefApi are in unnamed module of loader java.net.URLClassLoader @5853a3f9).[0m
+2022.11.26 00:43:01 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+class scala.reflect.internal.Trees$Block cannot be cast to class scala.reflect.api.Trees$CaseDefApi (scala.reflect.internal.Trees$Block and scala.reflect.api.Trees$CaseDefApi are in unnamed module of loader java.net.URLClassLoader @5853a3f9).[0m
+2022.11.26 00:43:34 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+class scala.reflect.internal.Trees$Block cannot be cast to class scala.reflect.api.Trees$CaseDefApi (scala.reflect.internal.Trees$Block and scala.reflect.api.Trees$CaseDefApi are in unnamed module of loader java.net.URLClassLoader @5853a3f9).[0m
+2022.11.26 00:43:57 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+class scala.reflect.internal.Trees$Block cannot be cast to class scala.reflect.api.Trees$CaseDefApi (scala.reflect.internal.Trees$Block and scala.reflect.api.Trees$CaseDefApi are in unnamed module of loader java.net.URLClassLoader @5853a3f9).[0m
+2022.11.26 00:44:06 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+class scala.reflect.internal.Trees$Block cannot be cast to class scala.reflect.api.Trees$CaseDefApi (scala.reflect.internal.Trees$Block and scala.reflect.api.Trees$CaseDefApi are in unnamed module of loader java.net.URLClassLoader @5853a3f9).[0m
+2022.11.26 00:44:11 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+class scala.reflect.internal.Trees$Block cannot be cast to class scala.reflect.api.Trees$CaseDefApi (scala.reflect.internal.Trees$Block and scala.reflect.api.Trees$CaseDefApi are in unnamed module of loader java.net.URLClassLoader @5853a3f9).[0m
+2022.11.26 00:44:15 INFO  Canceling debug proxy for [HweTest()][0m
+2022.11.26 00:44:15 ERROR Failed to initialize communication: Socket closed[0m
+2022.11.26 00:44:15 INFO  Closing debug server tcp://0.0.0.0:35345[0m
+2022.11.26 00:44:26 INFO  compiling root (1 scala source)[0m
+2022.11.26 00:44:29 INFO  time: compiled root in 2.88s[0m
+2022.11.26 00:44:38 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 00:44:38 INFO  compiling root (1 scala source)[0m
+2022.11.26 00:44:41 INFO  time: compiled root in 2.89s[0m
+Nov 26, 2022 12:45:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2177
+2022.11.26 00:45:42 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-server.trace.json or /home/chan4184/.cache/metals/dap-server.trace.json[0m
+2022.11.26 00:45:42 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-client.trace.json or /home/chan4184/.cache/metals/dap-client.trace.json[0m
+2022.11.26 00:45:42 INFO  Starting debug proxy for [HweTest()][0m
+2022.11.26 00:45:42 INFO  Trying to attach to remote debuggee VM localhost:58825 .[0m
+2022.11.26 00:45:42 INFO  Attaching to debuggee VM succeeded.[0m
+2022.11.26 00:45:58 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+class scala.reflect.internal.Trees$Block cannot be cast to class scala.reflect.api.Trees$CaseDefApi (scala.reflect.internal.Trees$Block and scala.reflect.api.Trees$CaseDefApi are in unnamed module of loader java.net.URLClassLoader @5853a3f9).[0m
+2022.11.26 00:47:36 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+class scala.reflect.internal.Trees$Block cannot be cast to class scala.reflect.api.Trees$CaseDefApi (scala.reflect.internal.Trees$Block and scala.reflect.api.Trees$CaseDefApi are in unnamed module of loader java.net.URLClassLoader @5853a3f9).[0m
+2022.11.26 00:47:37 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+class scala.reflect.internal.Trees$Block cannot be cast to class scala.reflect.api.Trees$CaseDefApi (scala.reflect.internal.Trees$Block and scala.reflect.api.Trees$CaseDefApi are in unnamed module of loader java.net.URLClassLoader @5853a3f9).[0m
+2022.11.26 00:47:44 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+class scala.reflect.internal.Trees$Block cannot be cast to class scala.reflect.api.Trees$CaseDefApi (scala.reflect.internal.Trees$Block and scala.reflect.api.Trees$CaseDefApi are in unnamed module of loader java.net.URLClassLoader @5853a3f9).[0m
+2022.11.26 00:47:44 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+class scala.reflect.internal.Trees$Block cannot be cast to class scala.reflect.api.Trees$CaseDefApi (scala.reflect.internal.Trees$Block and scala.reflect.api.Trees$CaseDefApi are in unnamed module of loader java.net.URLClassLoader @5853a3f9).[0m
+2022.11.26 00:47:46 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+class scala.reflect.internal.Trees$Block cannot be cast to class scala.reflect.api.Trees$CaseDefApi (scala.reflect.internal.Trees$Block and scala.reflect.api.Trees$CaseDefApi are in unnamed module of loader java.net.URLClassLoader @5853a3f9).[0m
+2022.11.26 00:47:49 INFO  Closing debug server tcp://0.0.0.0:42211[0m
+2022.11.26 00:47:49 INFO  Canceling debug proxy for [HweTest()][0m
+2022.11.26 00:47:49 ERROR Failed to initialize communication: Socket closed[0m
+Nov 26, 2022 12:49:12 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2471
+2022.11.26 00:50:08 INFO  compiling root (1 scala source)[0m
+2022.11.26 00:50:08 INFO  time: compiled root in 0.7s[0m
+2022.11.26 00:50:22 INFO  compiling root (1 scala source)[0m
+2022.11.26 00:50:25 INFO  time: compiled root in 2.28s[0m
+Nov 26, 2022 12:54:58 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2910
+2022.11.26 00:54:59 INFO  compiling root (1 scala source)[0m
+2022.11.26 00:55:01 INFO  time: compiled root in 2.13s[0m
+2022.11.26 00:55:58 INFO  compiling root (1 scala source)[0m
+2022.11.26 00:56:00 INFO  time: compiled root in 2.11s[0m
+Nov 26, 2022 1:00:51 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.11.26 01:01:02 INFO  file:///home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala:98:81: stale bloop warning: match may not be exhaustive.
+It would fail on the following inputs: (List(_), Nil), (Nil, List(_))
+  def UpdateEnvPCALLR(ys: List[Var], xs: List[Var], env: Env, _env: Env): Env = (ys, xs) match {
+                                                                                ^^^^^^^^[0m
+2022.11.26 01:01:02 INFO  file:///home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala:98:81: stale bloop warning: match may not be exhaustive.
+It would fail on the following inputs: (List(_), Nil), (Nil, List(_))
+  def UpdateEnvPCALLR(ys: List[Var], xs: List[Var], env: Env, _env: Env): Env = (ys, xs) match {
+                                                                                ^^^^^^^^[0m
+Nov 26, 2022 1:02:57 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3455
+2022.11.26 01:05:39 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:05:41 INFO  time: compiled root in 2.04s[0m
+2022.11.26 01:06:47 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-server.trace.json or /home/chan4184/.cache/metals/dap-server.trace.json[0m
+2022.11.26 01:06:47 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-client.trace.json or /home/chan4184/.cache/metals/dap-client.trace.json[0m
+2022.11.26 01:06:47 INFO  Starting debug proxy for [HweTest()][0m
+2022.11.26 01:06:48 INFO  Trying to attach to remote debuggee VM localhost:45769 .[0m
+2022.11.26 01:06:48 INFO  Attaching to debuggee VM succeeded.[0m
+2022.11.26 01:07:10 INFO  Canceling debug proxy for [HweTest()][0m
+2022.11.26 01:07:10 ERROR Failed to initialize communication: Socket closed[0m
+2022.11.26 01:07:10 INFO  Closing debug server tcp://0.0.0.0:37877[0m
+2022.11.26 01:07:14 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:07:16 INFO  time: compiled root in 2.46s[0m
+2022.11.26 01:09:19 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:09:22 INFO  time: compiled root in 2.27s[0m
+2022.11.26 01:13:10 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:13:10 INFO  time: compiled root in 0.32s[0m
+2022.11.26 01:13:11 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:15 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:15 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:19 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:20 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:21 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:22 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:22 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:23 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:25 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:26 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:27 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:28 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:28 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:28 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:28 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:31 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:31 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:37 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:40 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:40 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:41 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:42 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:42 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 26, 2022 1:13:44 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2022.11.26 01:13:51 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:53 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:13:53 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:14:42 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:14:42 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:14:42 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:14:56 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:14:56 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:14:56 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:14:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:14:59 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:23 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:23 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:24 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:24 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:25 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:25 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:28 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:29 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:29 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:31 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:31 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:33 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:34 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:35 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:37 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:56 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:58 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:15:59 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:01 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:11 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:12 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:12 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:15 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:16 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:16 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:17 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:18 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:47 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:48 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:48 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:49 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:51 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:51 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:52 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:54 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:16:56 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:17:01 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:17:02 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:17:03 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:17:04 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:17:04 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:17:05 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:17:11 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:17:11 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:17:14 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:17:15 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:17:16 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:17:21 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:18:48 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:19:37 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:20:45 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:20:45 INFO  time: compiled root in 0.32s[0m
+2022.11.26 01:20:46 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:21:07 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:21:11 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:21:38 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:21:39 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:21:40 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:21:44 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:21:45 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:21:46 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:21:46 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:21:47 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:21:48 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:21:49 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:21:55 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:21:55 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:21:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:01 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:01 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:05 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:05 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:06 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:07 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:08 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:08 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:08 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:09 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:11 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:11 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:12 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:14 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:16 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:17 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:19 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:20 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:31 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:22:31 INFO  time: compiled root in 0.26s[0m
+2022.11.26 01:22:31 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:38 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:40 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:40 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:40 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:42 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:43 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:43 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:45 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:45 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:47 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:47 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:49 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:50 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:50 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:52 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:52 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:52 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:53 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:53 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:54 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:55 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:22:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:05 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:06 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:06 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:07 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:07 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:10 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:10 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:10 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:12 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:13 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:14 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:21 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:27 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:29 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:31 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:23:31 INFO  time: compiled root in 0.26s[0m
+2022.11.26 01:23:31 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:35 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:35 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:37 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:38 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:38 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:44 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:45 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:45 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:47 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:48 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:49 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:23:50 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:00 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:00 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:03 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:03 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:04 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:05 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:06 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:08 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:09 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:09 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:09 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:24:09 INFO  time: compiled root in 0.27s[0m
+2022.11.26 01:24:10 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:12 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:13 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:14 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:14 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:15 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:17 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:24:17 INFO  time: compiled root in 0.23s[0m
+2022.11.26 01:24:17 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:27 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:27 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:27 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:24:27 INFO  time: compiled root in 0.23s[0m
+2022.11.26 01:24:27 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:31 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:31 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:31 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:31 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:33 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:35 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:37 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:24:37 INFO  time: compiled root in 0.23s[0m
+2022.11.26 01:24:37 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:42 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:50 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:55 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:55 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:55 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:24:55 INFO  time: compiled root in 0.23s[0m
+2022.11.26 01:24:55 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:55 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:24:55 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:25:47 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:15 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:19 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:20 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:21 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:21 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:21 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:23 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:24 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:25 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:26 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:27 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:28 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:28 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:29 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:31 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:34 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:34 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:39 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:26:39 INFO  time: compiled root in 0.24s[0m
+2022.11.26 01:26:39 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:49 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:26:51 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:26:51 INFO  time: compiled root in 0.24s[0m
+2022.11.26 01:26:51 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:27:23 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:27:26 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:27:26 INFO  time: compiled root in 0.24s[0m
+2022.11.26 01:27:26 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:27:48 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:27:51 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:27:51 INFO  time: compiled root in 0.23s[0m
+2022.11.26 01:27:51 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 26, 2022 1:28:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5757
+2022.11.26 01:28:00 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:16 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 26, 2022 1:28:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5772
+2022.11.26 01:28:19 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:20 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:21 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:22 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:23 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:25 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:26 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:27 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:27 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:27 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:29 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:33 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:36 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:37 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:39 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:39 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:44 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:44 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:44 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:28:44 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:44 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:44 INFO  time: compiled root in 0.23s[0m
+2022.11.26 01:28:45 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:46 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:46 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:47 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:47 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:48 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:49 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:53 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:56 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:28:59 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:07 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:32 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:32 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:32 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:34 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:35 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:35 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:36 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:37 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:39 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:40 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:44 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:47 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:49 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:54 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 26, 2022 1:29:57 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6086
+2022.11.26 01:29:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:29:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 26, 2022 1:29:57 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6087
+Nov 26, 2022 1:29:57 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6088
+2022.11.26 01:30:00 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:30:00 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:30:00 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:30:00 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:30:00 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:30:00 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:30:00 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:30:00 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:30:02 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:30:02 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:30:02 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 26, 2022 1:30:02 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6105
+2022.11.26 01:30:02 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:30:02 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:30:02 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:30:02 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:30:02 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 01:30:04 INFO  time: compiled root in 1.81s[0m
+2022.11.26 01:31:02 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:31:02 INFO  time: compiled root in 0.24s[0m
+Exception in thread "pool-4-thread-3" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Exception in thread "pool-4-thread-4" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Exception in thread "pool-4-thread-5" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022.11.26 01:32:54 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:32:54 INFO  time: compiled root in 0.19s[0m
+2022.11.26 01:33:05 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:33:05 INFO  time: compiled root in 0.19s[0m
+2022.11.26 01:33:26 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:33:26 INFO  time: compiled root in 0.22s[0m
+2022.11.26 01:33:37 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:33:37 INFO  time: compiled root in 0.21s[0m
+2022.11.26 01:33:50 INFO  compiling root (1 scala source)[0m
+2022.11.26 01:33:52 INFO  time: compiled root in 1.95s[0m
+2022.11.26 01:34:36 INFO  shutting down Metals[0m
+2022.11.26 01:34:36 INFO  Shut down connection with build server.[0m
+2022.11.26 01:34:36 INFO  Shut down connection with build server.[0m
+2022.11.26 01:34:36 INFO  Shut down connection with build server.[0m
