@@ -1,0 +1,42 @@
+2022.11.25 13:47:06 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/.metals/lsp.trace.json or /home/chanhyeok/.cache/metals/lsp.trace.json[0m
+2022.11.25 13:47:07 INFO  logging to file /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/.metals/metals.log[0m
+2022.11.25 13:47:07 INFO  Started: Metals version 0.11.9 in workspace '/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4' for client Visual Studio Code 1.73.1.[0m
+2022.11.25 13:47:10 INFO  time: initialize in 3.28s[0m
+2022.11.25 13:47:14 WARN  Build server is not auto-connectable.[0m
+2022.11.25 13:47:14 WARN  no build target for: /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 13:47:22 INFO  no build target found for /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala. Using presentation compiler with project's scala-library version: 3.2.0[0m
+2022.11.25 13:47:29 INFO  time: code lens generation in 10s[0m
+2022.11.25 13:47:29 INFO  time: code lens generation in 13s[0m
+2022.11.25 13:47:29 INFO  time: code lens generation in 11s[0m
+2022.11.25 13:51:03 WARN  no build target for: /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 2:03:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 650
+Nov 25, 2022 2:04:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 828
+2022.11.25 14:04:18 WARN  no build target for: /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 14:08:28 WARN  no build target for: /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 2:21:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1020
+Nov 25, 2022 2:21:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1072
+Nov 25, 2022 2:21:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1079
+Nov 25, 2022 2:21:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1087
+Nov 25, 2022 2:24:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1285
+2022.11.25 14:26:09 WARN  no build target for: /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 14:43:10 WARN  no build target for: /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 2:44:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2163
+2022.11.25 14:44:41 WARN  no build target for: /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 2:44:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2319
+2022.11.25 14:46:07 WARN  no build target for: /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 14:47:41 WARN  no build target for: /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 25, 2022 2:51:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3043
+2022.11.25 14:51:21 WARN  no build target for: /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 14:51:54 WARN  no build target for: /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 14:54:28 WARN  no build target for: /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.25 14:57:17 INFO  shutting down Metals[0m

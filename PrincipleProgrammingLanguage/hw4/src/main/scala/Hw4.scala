@@ -188,19 +188,38 @@ object MiniCInterpreter {
     }
     case BeginEnd(expr) => eval(env, mem, expr)
     case FieldAccess(record, field) => {
-
+      val E = eval(env, mem, record)
+      Result(E.m.get(E.v(field)), E.m)
     }
     case FieldAssign(record, field, new_val) => {
-
+      val E1 = eval(env, mem, record)
+      val E2 = eval(env, E1.m, new_val)
+      val new_mem = E2.m + (E1.v(field) -> E2.v)
+      Result(E2.v, new_mem)
     }
     case Block(f, s) => {
-
+      
     }
     case PCallV(ftn, arg) => {
-
+      // how to process a list of arg??
+      val E0 = eval(env, mem, ftn)
+      val E = E0.v match {
+        case ProcVal(args, expr, env_prime) => {
+          val new_env = env_prime + (args -> env(arg))
+          eval(new_env, E0.m, expr)
+        }
+        case _ => throw new UndefinedSemantics(s"message ${expr}")
+      }
+      E
     }
     case PCallR(ftn, arg) => {
+      val E0 = eval(env, mem, ftn)
+      val E = E0.v match {
+        case ProcVal(args, expr, env_prime) => {
 
+        }
+        case _ => throw new UndefinedSemantics(s"message ${expr}")
+      }
     }
     case WhileExpr(cond, body) => {
       val E1 = eval(env, mem, cond)
@@ -212,6 +231,10 @@ object MiniCInterpreter {
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       E
+    }
+    case EmptyRecordExpr => Result(EmptyRecordVal, mem)
+    case RecordExpr(field, initVal, next) => {
+      
     }
     case _ => throw new UndefinedSemantics(s"message ${expr}")
   }
