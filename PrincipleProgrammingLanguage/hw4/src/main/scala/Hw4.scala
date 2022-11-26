@@ -232,7 +232,6 @@ object MiniCInterpreter {
     case BeginEnd(expr) => eval(env, mem, expr)
     case FieldAccess(record, field) => {
       val E = eval(env, mem, record)
-<<<<<<< HEAD
       val E_prime = E.v match {
         case RecordVal(x, loc, next) => {
           if (x == field) E.m.get(loc) match {
@@ -247,14 +246,10 @@ object MiniCInterpreter {
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       E_prime
-=======
-      Result(E.m.get(E.v(field)), E.m)
->>>>>>> ae3190d565c81c95dee28bb2de9782bc00cd86e3
     }
     case FieldAssign(record, field, new_val) => {
       val E1 = eval(env, mem, record)
       val E2 = eval(env, E1.m, new_val)
-<<<<<<< HEAD
       val loc = E1.v match {
         case RecordVal(x, loc, next) => {
           if (x == field) loc
@@ -278,28 +273,12 @@ object MiniCInterpreter {
         case ProcVal(args, expr_0, env_prime) => {
           val (cal_env, cal_mem) = UpdatePCALLV(arg, args, env, env_prime, mem)
           eval(cal_env, cal_mem, expr_0)
-=======
-      val new_mem = E2.m + (E1.v(field) -> E2.v)
-      Result(E2.v, new_mem)
-    }
-    case Block(f, s) => {
-      
-    }
-    case PCallV(ftn, arg) => {
-      // how to process a list of arg??
-      val E0 = eval(env, mem, ftn)
-      val E = E0.v match {
-        case ProcVal(args, expr, env_prime) => {
-          val new_env = env_prime + (args -> env(arg))
-          eval(new_env, E0.m, expr)
->>>>>>> ae3190d565c81c95dee28bb2de9782bc00cd86e3
         }
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       E
     }
     case PCallR(ftn, arg) => {
-<<<<<<< HEAD
       // how to process a list of arg??
       val E0 = eval(env, mem, ftn)
       val E = E0.v match {
@@ -310,15 +289,6 @@ object MiniCInterpreter {
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       E
-=======
-      val E0 = eval(env, mem, ftn)
-      val E = E0.v match {
-        case ProcVal(args, expr, env_prime) => {
-
-        }
-        case _ => throw new UndefinedSemantics(s"message ${expr}")
-      }
->>>>>>> ae3190d565c81c95dee28bb2de9782bc00cd86e3
     }
     case WhileExpr(cond, body) => {
       val E1 = eval(env, mem, cond)
@@ -333,18 +303,19 @@ object MiniCInterpreter {
     }
     case EmptyRecordExpr => Result(EmptyRecordVal, mem)
     case RecordExpr(field, initVal, next) => {
-<<<<<<< HEAD
-      val E = eval(env, mem, initVal)
-      val (new_mem, loc) = E.m.extended(E.v)
-      val new_env = env + (field -> loc)
-      val E_prime = eval(env, new_mem, next).v match {
-        case RecordVal(field, loc, next_val) => RecordVal(field, loc, next_val)
-        case _ => throw new UndefinedSemantics(s"message ${expr}")
+      eval(env, mem, initVal) match {
+        case Result(v, m) => {
+          val (new_mem, new_loc) = m.extended(v)
+          val E = eval(env, new_mem, next) match {
+            case Result(next_v, next_m) => next_v match {
+              case RecordVal(next_field, next_loc, next_val) => RecordVal(next_field, next_loc, next_val)
+              case EmptyRecordVal => EmptyRecordVal
+              case _ => throw new UndefinedSemantics(s"message ${expr}")
+            }
+          }
+          Result(RecordVal(field, new_loc, E), new_mem)
+        }
       }
-      Result(E_prime, new_mem)
-=======
-      
->>>>>>> ae3190d565c81c95dee28bb2de9782bc00cd86e3
     }
     case _ => throw new UndefinedSemantics(s"message ${expr}")
   }

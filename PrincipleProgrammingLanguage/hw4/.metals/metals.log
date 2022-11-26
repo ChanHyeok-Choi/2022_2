@@ -1301,3 +1301,1728 @@ WARNING: Unmatched cancel notification for request id 3043
 2022.11.25 14:54:28 WARN  no build target for: /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
 2022.11.25 14:57:17 INFO  shutting down Metals[0m
 >>>>>>> ae3190d565c81c95dee28bb2de9782bc00cd86e3
+2022.11.26 11:39:33 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/lsp.trace.json or /home/chan4184/.cache/metals/lsp.trace.json[0m
+2022.11.26 11:39:34 INFO  logging to file /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/metals.log[0m
+2022.11.26 11:39:34 INFO  Started: Metals version 0.11.9 in workspace '/home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4' for client Visual Studio Code 1.73.1.[0m
+2022.11.26 11:39:35 INFO  time: initialize in 1.78s[0m
+2022.11.26 11:39:37 INFO  Attempting to connect to the build server...[0m
+2022.11.26 11:39:37 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/chan4184/.bloop/bloop.json[0m
+2022.11.26 11:39:38 INFO  skipping build import with status 'Installed'[0m
+2022.11.26 11:39:42 INFO  no build target found for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala. Using presentation compiler with project's scala-library version: 3.2.0[0m
+2022.11.26 11:39:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/bsp.trace.json or /home/chan4184/.cache/metals/bsp.trace.json[0m
+2022.11.26 11:39:43 INFO  Attempting to connect to the build server...[0m
+2022.11.26 11:39:43 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/chan4184/.bloop/bloop.json[0m
+2022.11.26 11:39:43 INFO  Attempting to connect to the build server...[0m
+2022.11.26 11:39:43 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/chan4184/.bloop/bloop.json[0m
+2022.11.26 11:39:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/project/.metals/bsp.trace.json or /home/chan4184/.cache/metals/bsp.trace.json[0m
+2022.11.26 11:39:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/project/project/.metals/bsp.trace.json or /home/chan4184/.cache/metals/bsp.trace.json[0m
+2022.11.26 11:39:43 INFO  time: Connected to build server in 5.96s[0m
+2022.11.26 11:39:43 INFO  Connected to Build server: Bloop v1.5.4[0m
+2022.11.26 11:39:44 INFO  time: Imported build in 0.35s[0m
+2022.11.26 11:39:45 INFO  no build target found for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala. Using presentation compiler with project's scala-library version: 3.2.0[0m
+Nov 26, 2022 11:39:46 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
+Nov 26, 2022 11:39:46 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+2022.11.26 11:39:48 INFO  time: code lens generation in 1.13s[0m
+2022.11.26 11:39:48 INFO  time: code lens generation in 9.43s[0m
+2022.11.26 11:39:48 INFO  time: code lens generation in 2.09s[0m
+Nov 26, 2022 11:39:49 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException: Index 6591 out of bounds for length 6591
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: Index 6591 out of bounds for length 6591
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 6591 out of bounds for length 6591
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:34)
+	at scala.meta.internal.parsers.ScannerTokens.apply(ScannerTokens.scala:38)
+	at scala.meta.internal.parsers.LazyTokenIterator.nextToken(LazyTokenIterator.scala:194)
+	at scala.meta.internal.parsers.LazyTokenIterator.next(LazyTokenIterator.scala:63)
+	at scala.meta.internal.parsers.ScalametaParser.next(ScalametaParser.scala:188)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$next(ScalametaParser.scala:221)
+	at scala.meta.internal.parsers.ScalametaParser.ahead(ScalametaParser.scala:204)
+	at scala.meta.internal.parsers.ScalametaParser.iter$3(ScalametaParser.scala:2434)
+	at scala.meta.internal.parsers.ScalametaParser.caseClausesIfAny(ScalametaParser.scala:2439)
+	at scala.meta.internal.parsers.ScalametaParser.caseClauses(ScalametaParser.scala:2416)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$3(ScalametaParser.scala:1444)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOr(ScalametaParser.scala:251)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$2(ScalametaParser.scala:1444)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:361)
+	at scala.meta.internal.parsers.ScalametaParser.matchClause(ScalametaParser.scala:1444)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:1647)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1505)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1389)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:1413)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$funDefRest$1(ScalametaParser.scala:3599)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:361)
+	at scala.meta.internal.parsers.ScalametaParser.funDefRest(ScalametaParser.scala:3561)
+	at scala.meta.internal.parsers.ScalametaParser.funDefOrDclOrExtensionOrSecondaryCtor(ScalametaParser.scala:3503)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3337)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3316)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4276)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4270)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4222)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateStatSeq$1(ScalametaParser.scala:4262)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateStatSeq$1$adapted(ScalametaParser.scala:4261)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$listBy(ScalametaParser.scala:531)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:4261)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4110)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOr(ScalametaParser.scala:251)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:247)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4110)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4118)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4099)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4073)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:3807)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:361)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:3799)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:3676)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:3657)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$4.applyOrElse(ScalametaParser.scala:4241)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$4.applyOrElse(ScalametaParser.scala:4229)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4222)
+	at scala.meta.internal.parsers.ScalametaParser.bracelessPackageStats$1(ScalametaParser.scala:4422)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$12(ScalametaParser.scala:4435)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$11(ScalametaParser.scala:4435)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4435)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4392)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4385)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4385)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4390)
+	at scala.meta.internal.parsers.ScalametaParser.parseSourceImpl(ScalametaParser.scala:132)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$1(ScalametaParser.scala:129)
+	at scala.meta.internal.parsers.ScalametaParser.parseRuleAfterBOF(ScalametaParser.scala:56)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:51)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:129)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.parsers.Parse$$anon$1.apply(Parse.scala:36)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.parsing.Trees.$anonfun$parse$2(Trees.scala:129)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.Trees.parse(Trees.scala:122)
+	at scala.meta.internal.parsing.Trees.$anonfun$get$1(Trees.scala:34)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.parsing.Trees.get(Trees.scala:34)
+	at scala.meta.internal.parsing.DocumentSymbolProvider.documentSymbols(DocumentSymbolProvider.scala:33)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentSymbol$1(MetalsLanguageServer.scala:1545)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.11.26 11:39:51 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2022.11.26 11:39:51 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2022.11.26 11:39:51 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2022.11.26 11:39:51 INFO  time: indexed workspace in 7.41s[0m
+Nov 26, 2022 11:39:52 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 6593 out of bounds for length 6593
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:34)
+	at scala.meta.internal.parsers.ScannerTokens.apply(ScannerTokens.scala:38)
+	at scala.meta.internal.parsers.LazyTokenIterator.nextToken(LazyTokenIterator.scala:194)
+	at scala.meta.internal.parsers.LazyTokenIterator.next(LazyTokenIterator.scala:63)
+	at scala.meta.internal.parsers.ScalametaParser.next(ScalametaParser.scala:188)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$next(ScalametaParser.scala:221)
+	at scala.meta.internal.parsers.ScalametaParser.ahead(ScalametaParser.scala:204)
+	at scala.meta.internal.parsers.ScalametaParser.iter$3(ScalametaParser.scala:2434)
+	at scala.meta.internal.parsers.ScalametaParser.caseClausesIfAny(ScalametaParser.scala:2439)
+	at scala.meta.internal.parsers.ScalametaParser.caseClauses(ScalametaParser.scala:2416)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$3(ScalametaParser.scala:1444)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOr(ScalametaParser.scala:251)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$2(ScalametaParser.scala:1444)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:361)
+	at scala.meta.internal.parsers.ScalametaParser.matchClause(ScalametaParser.scala:1444)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:1647)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1505)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1389)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:1413)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$funDefRest$1(ScalametaParser.scala:3599)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:361)
+	at scala.meta.internal.parsers.ScalametaParser.funDefRest(ScalametaParser.scala:3561)
+	at scala.meta.internal.parsers.ScalametaParser.funDefOrDclOrExtensionOrSecondaryCtor(ScalametaParser.scala:3503)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3337)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3316)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4276)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4270)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4222)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateStatSeq$1(ScalametaParser.scala:4262)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateStatSeq$1$adapted(ScalametaParser.scala:4261)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$listBy(ScalametaParser.scala:531)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:4261)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4110)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOr(ScalametaParser.scala:251)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:247)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4110)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4118)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4099)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4073)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:3807)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:361)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:3799)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:3676)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:3657)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$4.applyOrElse(ScalametaParser.scala:4241)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$4.applyOrElse(ScalametaParser.scala:4229)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4222)
+	at scala.meta.internal.parsers.ScalametaParser.bracelessPackageStats$1(ScalametaParser.scala:4422)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$12(ScalametaParser.scala:4435)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$11(ScalametaParser.scala:4435)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4435)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4392)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4385)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4385)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4390)
+	at scala.meta.internal.parsers.ScalametaParser.parseSourceImpl(ScalametaParser.scala:132)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$1(ScalametaParser.scala:129)
+	at scala.meta.internal.parsers.ScalametaParser.parseRuleAfterBOF(ScalametaParser.scala:56)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:51)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:129)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.parsers.Parse$$anon$1.apply(Parse.scala:36)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.parsing.Trees.$anonfun$parse$2(Trees.scala:129)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.Trees.parse(Trees.scala:122)
+	at scala.meta.internal.parsing.Trees.$anonfun$get$1(Trees.scala:34)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.parsing.Trees.get(Trees.scala:34)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:77)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:97)
+	at scala.meta.internal.metals.codeactions.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:70)
+	at scala.meta.internal.metals.codeactions.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:68)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.codeactions.CodeActionProvider.codeActions(CodeActionProvider.scala:68)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1731)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1730)
+	... 16 more
+
+Nov 26, 2022 11:39:52 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 26
+Nov 26, 2022 11:39:52 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 6597 out of bounds for length 6597
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:34)
+	at scala.meta.internal.parsers.ScannerTokens.apply(ScannerTokens.scala:38)
+	at scala.meta.internal.parsers.LazyTokenIterator.nextToken(LazyTokenIterator.scala:194)
+	at scala.meta.internal.parsers.LazyTokenIterator.next(LazyTokenIterator.scala:63)
+	at scala.meta.internal.parsers.ScalametaParser.next(ScalametaParser.scala:188)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$next(ScalametaParser.scala:221)
+	at scala.meta.internal.parsers.ScalametaParser.ahead(ScalametaParser.scala:204)
+	at scala.meta.internal.parsers.ScalametaParser.iter$3(ScalametaParser.scala:2434)
+	at scala.meta.internal.parsers.ScalametaParser.caseClausesIfAny(ScalametaParser.scala:2439)
+	at scala.meta.internal.parsers.ScalametaParser.caseClauses(ScalametaParser.scala:2416)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$3(ScalametaParser.scala:1444)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOr(ScalametaParser.scala:251)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$2(ScalametaParser.scala:1444)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:361)
+	at scala.meta.internal.parsers.ScalametaParser.matchClause(ScalametaParser.scala:1444)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:1647)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1505)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1389)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:1413)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$funDefRest$1(ScalametaParser.scala:3599)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:361)
+	at scala.meta.internal.parsers.ScalametaParser.funDefRest(ScalametaParser.scala:3561)
+	at scala.meta.internal.parsers.ScalametaParser.funDefOrDclOrExtensionOrSecondaryCtor(ScalametaParser.scala:3503)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3337)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3316)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4276)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4270)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4222)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateStatSeq$1(ScalametaParser.scala:4262)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateStatSeq$1$adapted(ScalametaParser.scala:4261)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$listBy(ScalametaParser.scala:531)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:4261)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4110)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOr(ScalametaParser.scala:251)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:247)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4110)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4118)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4099)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4073)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:3807)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:361)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:3799)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:3676)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:3657)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$4.applyOrElse(ScalametaParser.scala:4241)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$4.applyOrElse(ScalametaParser.scala:4229)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4222)
+	at scala.meta.internal.parsers.ScalametaParser.bracelessPackageStats$1(ScalametaParser.scala:4422)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$12(ScalametaParser.scala:4435)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$11(ScalametaParser.scala:4435)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4435)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4392)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4385)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4385)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4390)
+	at scala.meta.internal.parsers.ScalametaParser.parseSourceImpl(ScalametaParser.scala:132)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$1(ScalametaParser.scala:129)
+	at scala.meta.internal.parsers.ScalametaParser.parseRuleAfterBOF(ScalametaParser.scala:56)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:51)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:129)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.parsers.Parse$$anon$1.apply(Parse.scala:36)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.parsing.Trees.$anonfun$parse$2(Trees.scala:129)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.Trees.parse(Trees.scala:122)
+	at scala.meta.internal.parsing.Trees.$anonfun$get$1(Trees.scala:34)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.parsing.Trees.get(Trees.scala:34)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:77)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:97)
+	at scala.meta.internal.metals.codeactions.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:70)
+	at scala.meta.internal.metals.codeactions.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:68)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.codeactions.CodeActionProvider.codeActions(CodeActionProvider.scala:68)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1731)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1730)
+	... 16 more
+
+2022.11.26 11:39:53 INFO  compiling root (2 scala sources and 4 java sources)[0m
+Nov 26, 2022 11:39:54 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException: Index 6597 out of bounds for length 6597
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: Index 6597 out of bounds for length 6597
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 6597 out of bounds for length 6597
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:34)
+	at scala.meta.internal.parsers.ScannerTokens.apply(ScannerTokens.scala:38)
+	at scala.meta.internal.parsers.LazyTokenIterator.nextToken(LazyTokenIterator.scala:194)
+	at scala.meta.internal.parsers.LazyTokenIterator.next(LazyTokenIterator.scala:63)
+	at scala.meta.internal.parsers.ScalametaParser.next(ScalametaParser.scala:188)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$next(ScalametaParser.scala:221)
+	at scala.meta.internal.parsers.ScalametaParser.ahead(ScalametaParser.scala:204)
+	at scala.meta.internal.parsers.ScalametaParser.iter$3(ScalametaParser.scala:2434)
+	at scala.meta.internal.parsers.ScalametaParser.caseClausesIfAny(ScalametaParser.scala:2439)
+	at scala.meta.internal.parsers.ScalametaParser.caseClauses(ScalametaParser.scala:2416)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$3(ScalametaParser.scala:1444)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOr(ScalametaParser.scala:251)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$2(ScalametaParser.scala:1444)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:361)
+	at scala.meta.internal.parsers.ScalametaParser.matchClause(ScalametaParser.scala:1444)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:1647)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1505)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1389)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:1413)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$funDefRest$1(ScalametaParser.scala:3599)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:361)
+	at scala.meta.internal.parsers.ScalametaParser.funDefRest(ScalametaParser.scala:3561)
+	at scala.meta.internal.parsers.ScalametaParser.funDefOrDclOrExtensionOrSecondaryCtor(ScalametaParser.scala:3503)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3337)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3316)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4276)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4270)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4222)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateStatSeq$1(ScalametaParser.scala:4262)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateStatSeq$1$adapted(ScalametaParser.scala:4261)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$listBy(ScalametaParser.scala:531)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:4261)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4110)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOr(ScalametaParser.scala:251)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:247)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4110)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4118)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4099)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4073)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:3807)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:361)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:3799)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:3676)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:3657)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$4.applyOrElse(ScalametaParser.scala:4241)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$4.applyOrElse(ScalametaParser.scala:4229)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4222)
+	at scala.meta.internal.parsers.ScalametaParser.bracelessPackageStats$1(ScalametaParser.scala:4422)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$12(ScalametaParser.scala:4435)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$11(ScalametaParser.scala:4435)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4435)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4392)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4385)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4385)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4390)
+	at scala.meta.internal.parsers.ScalametaParser.parseSourceImpl(ScalametaParser.scala:132)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$1(ScalametaParser.scala:129)
+	at scala.meta.internal.parsers.ScalametaParser.parseRuleAfterBOF(ScalametaParser.scala:56)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:51)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:129)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.parsers.Parse$$anon$1.apply(Parse.scala:36)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.parsing.Trees.$anonfun$parse$2(Trees.scala:129)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.Trees.parse(Trees.scala:122)
+	at scala.meta.internal.parsing.Trees.$anonfun$get$1(Trees.scala:34)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.parsing.Trees.get(Trees.scala:34)
+	at scala.meta.internal.parsing.DocumentSymbolProvider.documentSymbols(DocumentSymbolProvider.scala:33)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$documentSymbol$1(MetalsLanguageServer.scala:1545)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.11.26 11:39:55 INFO  time: compiled root in 2.46s[0m
+Nov 26, 2022 11:39:56 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 6597 out of bounds for length 6597
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:34)
+	at scala.meta.internal.parsers.ScannerTokens.apply(ScannerTokens.scala:38)
+	at scala.meta.internal.parsers.LazyTokenIterator.nextToken(LazyTokenIterator.scala:194)
+	at scala.meta.internal.parsers.LazyTokenIterator.next(LazyTokenIterator.scala:63)
+	at scala.meta.internal.parsers.ScalametaParser.next(ScalametaParser.scala:188)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$next(ScalametaParser.scala:221)
+	at scala.meta.internal.parsers.ScalametaParser.ahead(ScalametaParser.scala:204)
+	at scala.meta.internal.parsers.ScalametaParser.iter$3(ScalametaParser.scala:2434)
+	at scala.meta.internal.parsers.ScalametaParser.caseClausesIfAny(ScalametaParser.scala:2439)
+	at scala.meta.internal.parsers.ScalametaParser.caseClauses(ScalametaParser.scala:2416)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$3(ScalametaParser.scala:1444)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOr(ScalametaParser.scala:251)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$matchClause$2(ScalametaParser.scala:1444)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:361)
+	at scala.meta.internal.parsers.ScalametaParser.matchClause(ScalametaParser.scala:1444)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$expr$2(ScalametaParser.scala:1647)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1505)
+	at scala.meta.internal.parsers.ScalametaParser.expr(ScalametaParser.scala:1389)
+	at scala.meta.internal.parsers.ScalametaParser.exprMaybeIndented(ScalametaParser.scala:1413)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$funDefRest$1(ScalametaParser.scala:3599)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:361)
+	at scala.meta.internal.parsers.ScalametaParser.funDefRest(ScalametaParser.scala:3561)
+	at scala.meta.internal.parsers.ScalametaParser.funDefOrDclOrExtensionOrSecondaryCtor(ScalametaParser.scala:3503)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:3337)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3316)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4276)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1.applyOrElse(ScalametaParser.scala:4270)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4222)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateStatSeq$1(ScalametaParser.scala:4262)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateStatSeq$1$adapted(ScalametaParser.scala:4261)
+	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$listBy(ScalametaParser.scala:531)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:4261)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4110)
+	at scala.meta.internal.parsers.ScalametaParser.inBracesOr(ScalametaParser.scala:251)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:247)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4110)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4118)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4099)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4073)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:3807)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:361)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:3799)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:3676)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:3657)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$4.applyOrElse(ScalametaParser.scala:4241)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$4.applyOrElse(ScalametaParser.scala:4229)
+	at scala.PartialFunction.$anonfun$runWith$1(PartialFunction.scala:231)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:230)
+	at scala.meta.internal.parsers.ScalametaParser.statSeqBuf(ScalametaParser.scala:4222)
+	at scala.meta.internal.parsers.ScalametaParser.bracelessPackageStats$1(ScalametaParser.scala:4422)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$12(ScalametaParser.scala:4435)
+	at scala.meta.internal.parsers.ScalametaParser.autoEndPos(ScalametaParser.scala:359)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$11(ScalametaParser.scala:4435)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:4435)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:4392)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:4385)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:316)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:357)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:4385)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:4390)
+	at scala.meta.internal.parsers.ScalametaParser.parseSourceImpl(ScalametaParser.scala:132)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$1(ScalametaParser.scala:129)
+	at scala.meta.internal.parsers.ScalametaParser.parseRuleAfterBOF(ScalametaParser.scala:56)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:51)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:129)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.parsers.Parse$$anon$1.apply(Parse.scala:36)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.parsing.Trees.$anonfun$parse$2(Trees.scala:129)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.parsing.Trees.parse(Trees.scala:122)
+	at scala.meta.internal.parsing.Trees.$anonfun$get$1(Trees.scala:34)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.parsing.Trees.get(Trees.scala:34)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:77)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:97)
+	at scala.meta.internal.metals.codeactions.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:70)
+	at scala.meta.internal.metals.codeactions.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:68)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.codeactions.CodeActionProvider.codeActions(CodeActionProvider.scala:68)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1731)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1730)
+	... 16 more
+
+2022.11.26 11:39:55 INFO  compiling root (2 scala sources and 4 java sources)[0m
+Nov 26, 2022 11:39:56 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+2022.11.26 11:39:55 INFO  time: compiled root in 0.39s[0m
+Nov 26, 2022 11:39:56 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:39:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:06 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:06 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:06 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:08 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:08 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:08 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:09 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:11 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:12 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:743)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:731)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2108)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:12 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:12 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:14 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:22 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:22 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:22 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+2022.11.26 11:40:23 INFO  compiling root (2 scala sources and 4 java sources)[0m
+2022.11.26 11:40:23 INFO  time: compiled root in 0.26s[0m
+Nov 26, 2022 11:40:24 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:40:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:41:23 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:41:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:41:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:41:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:41:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:41:40 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Exception in thread "pool-6-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Nov 26, 2022 11:41:40 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:41:40 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 104
+Exception in thread "pool-6-thread-2" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Nov 26, 2022 11:41:40 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:41:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:41:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Nov 26, 2022 11:41:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+2022.11.26 11:41:53 INFO  compiling root (2 scala sources and 4 java sources)[0m
+2022.11.26 11:42:01 WARN  4 deprecations (since 2.13.0); re-run with -deprecation for details[0m
+2022.11.26 11:42:03 INFO  time: compiled root in 10s[0m
+2022.11.26 11:42:03 INFO  compiling root-test (1 scala source)[0m
+2022.11.26 11:42:05 INFO  time: compiled root-test in 2.29s[0m
+2022.11.26 11:45:25 INFO  compiling root (1 scala source)[0m
+2022.11.26 11:45:25 INFO  time: compiled root in 0.78s[0m
+Nov 26, 2022 11:45:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 337
+2022.11.26 11:45:38 INFO  compiling root (1 scala source)[0m
+2022.11.26 11:45:38 INFO  time: compiled root in 0.57s[0m
+2022.11.26 11:46:45 INFO  compiling root (1 scala source)[0m
+2022.11.26 11:46:47 INFO  time: compiled root in 2.83s[0m
+2022.11.26 11:47:55 INFO  compiling root (1 scala source)[0m
+2022.11.26 11:47:58 INFO  time: compiled root in 3.21s[0m
+2022.11.26 11:50:17 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-server.trace.json or /home/chan4184/.cache/metals/dap-server.trace.json[0m
+2022.11.26 11:50:17 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-client.trace.json or /home/chan4184/.cache/metals/dap-client.trace.json[0m
+2022.11.26 11:50:18 INFO  Starting debug proxy for [HweTest()][0m
+2022.11.26 11:50:19 INFO  Trying to attach to remote debuggee VM localhost:33505 .[0m
+2022.11.26 11:50:19 INFO  Attaching to debuggee VM succeeded.[0m
+2022.11.26 11:50:30 ERROR Failed to initialize communication: Socket closed[0m
+2022.11.26 11:50:30 INFO  Closing debug server tcp://0.0.0.0:43255[0m
+2022.11.26 11:50:30 INFO  Canceling debug proxy for [HweTest()][0m
+2022.11.26 11:50:34 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-server.trace.json or /home/chan4184/.cache/metals/dap-server.trace.json[0m
+2022.11.26 11:50:34 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-client.trace.json or /home/chan4184/.cache/metals/dap-client.trace.json[0m
+2022.11.26 11:50:34 INFO  Starting debug proxy for [HweTest()][0m
+2022.11.26 11:50:35 INFO  Trying to attach to remote debuggee VM localhost:56525 .[0m
+2022.11.26 11:50:35 INFO  Attaching to debuggee VM succeeded.[0m
+2022.11.26 11:51:41 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+not found: value body.[0m
+2022.11.26 11:53:43 ERROR [error response][evaluate]: Cannot evaluate because of failed compilation:
+illegal start of simple pattern.[0m
+2022.11.26 11:54:04 INFO  Canceling debug proxy for [HweTest()][0m
+2022.11.26 11:54:04 INFO  Closing debug server tcp://0.0.0.0:34565[0m
+2022.11.26 11:54:04 ERROR Failed to initialize communication: Socket closed[0m
+2022.11.26 12:00:50 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-server.trace.json or /home/chan4184/.cache/metals/dap-server.trace.json[0m
+2022.11.26 12:00:50 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/.metals/dap-client.trace.json or /home/chan4184/.cache/metals/dap-client.trace.json[0m
+2022.11.26 12:00:51 INFO  Starting debug proxy for [HweTest()][0m
+2022.11.26 12:00:51 INFO  Trying to attach to remote debuggee VM localhost:34023 .[0m
+2022.11.26 12:00:51 INFO  Attaching to debuggee VM succeeded.[0m
+2022.11.26 12:03:25 INFO  Closing debug server tcp://0.0.0.0:33355[0m
+2022.11.26 12:03:25 INFO  Canceling debug proxy for [HweTest()][0m
+2022.11.26 12:03:25 ERROR Failed to initialize communication: Socket closed[0m
+Exception in thread "pool-6-thread-3" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Nov 26, 2022 12:06:30 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: value <error: object MiniCInterpreter> is not a module
+Nov 26, 2022 12:08:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1500
+Nov 26, 2022 12:09:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1532
+2022.11.26 12:10:03 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:10:03 INFO  time: compiled root in 0.41s[0m
+2022.11.26 12:10:03 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:04 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:06 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:07 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:07 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:09 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:10 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:10 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:10 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:12 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:16 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:18 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:19 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:20 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:20 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:22 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:23 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:23 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:33 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:10:33 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:33 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:33 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:10:36 INFO  time: compiled root in 3.01s[0m
+2022.11.26 12:11:46 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:11:49 INFO  time: compiled root in 2.73s[0m
+Nov 26, 2022 12:13:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2148
+Nov 26, 2022 12:13:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2207
+2022.11.26 12:13:55 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:13:55 INFO  time: compiled root in 0.32s[0m
+2022.11.26 12:14:05 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:14:05 INFO  time: compiled root in 0.33s[0m
+2022.11.26 12:14:26 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:14:28 INFO  time: compiled root in 2.28s[0m
+2022.11.26 12:17:03 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:17:03 INFO  time: compiled root in 0.29s[0m
+2022.11.26 12:17:29 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:17:29 INFO  time: compiled root in 0.28s[0m
+Nov 26, 2022 12:17:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2976
+2022.11.26 12:17:39 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:17:39 INFO  time: compiled root in 0.35s[0m
+2022.11.26 12:46:27 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:46:27 INFO  time: compiled root in 0.26s[0m
+2022.11.26 12:47:05 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:47:05 INFO  time: compiled root in 0.25s[0m
+2022.11.26 12:47:08 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:47:08 INFO  time: compiled root in 0.27s[0m
+2022.11.26 12:49:10 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:49:12 INFO  time: compiled root in 1.98s[0m
+2022.11.26 12:49:43 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:49:45 INFO  time: compiled root in 2.13s[0m
+2022.11.26 12:49:58 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:49:58 INFO  time: compiled root in 0.28s[0m
+2022.11.26 12:50:03 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:50:05 INFO  time: compiled root in 2.13s[0m
+Nov 26, 2022 12:52:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3510
+Nov 26, 2022 12:52:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3511
+Nov 26, 2022 12:52:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3720
+2022.11.26 12:53:42 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:53:42 INFO  time: compiled root in 0.22s[0m
+2022.11.26 12:53:42 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:53:50 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:53:51 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:53:51 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:53:52 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:53:53 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:53:54 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:53:55 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:53:56 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:53:56 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:53:57 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:07 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:08 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:10 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:11 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:13 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:13 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:13 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:14 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:15 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:14 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:15 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:25 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:26 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:28 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:28 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:29 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:29 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:30 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:31 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:31 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:31 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:36 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:38 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:40 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:41 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:41 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:54:42 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:54:42 INFO  time: compiled root in 0.22s[0m
+2022.11.26 12:54:42 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:03 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:05 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:05 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:08 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:08 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:10 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:11 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:18 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:20 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:21 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:21 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:23 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:23 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:24 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:25 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:25 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:25 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:26 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:27 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:28 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:29 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:29 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 26, 2022 12:55:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4186
+2022.11.26 12:55:30 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:31 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:31 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:34 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:34 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:34 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:34 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:34 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:34 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:34 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:34 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:34 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:34 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:34 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:34 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:37 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:37 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:55:37 INFO  time: compiled root in 0.22s[0m
+2022.11.26 12:55:38 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:40 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:41 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:43 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:43 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:43 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:46 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:46 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:48 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:50 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:51 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:54 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:55 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:56 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:55:58 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:56:04 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:56:06 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+Nov 26, 2022 12:56:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4367
+2022.11.26 12:56:10 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:56:11 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:56:13 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:56:14 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:56:15 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:56:16 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:56:16 INFO  time: compiled root in 0.25s[0m
+2022.11.26 12:56:16 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:56:24 WARN  Could not load snapshot text for /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/scala/Hw4.scala[0m
+2022.11.26 12:56:25 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:56:27 INFO  time: compiled root in 2.18s[0m
+2022.11.26 12:57:26 INFO  compiling root (1 scala source)[0m
+2022.11.26 12:57:28 INFO  time: compiled root in 2.22s[0m
+Nov 26, 2022 12:59:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4797
+2022.11.26 13:01:31 INFO  compiling root (1 scala source)[0m
+2022.11.26 13:01:33 INFO  time: compiled root in 2.16s[0m
+2022.11.26 21:04:12 INFO  shutting down Metals[0m
+2022.11.26 21:04:12 INFO  Shut down connection with build server.[0m
+2022.11.26 21:04:12 INFO  Shut down connection with build server.[0m
+2022.11.26 21:04:12 INFO  Shut down connection with build server.[0m

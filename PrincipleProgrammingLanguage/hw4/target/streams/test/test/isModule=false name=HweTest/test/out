@@ -33,10 +33,56 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- test with expected result: IntVal(11) input: let x = 10 in x := 11[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- test with expected result: SkipVal input: let x = 10 in x := skip[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- test with expected result: EmptyRecordVal input: {}[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- test with expected result: RecordVal(Var("x"),LocVal(0),EmptyRecordVal) input: {x := 1} *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  hw4.MiniCInterpreter$UndefinedSemantics: Undefined Semantics: message RecordExpr(Var("x"),Const(1),EmptyRecordExpr)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:311)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.apply(Hw4.scala:324)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test with expected result: RecordVal(Var("x"),LocVal(0),EmptyRecordVal) input: {x := 1}[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test with expected result: RecordVal(Var("y"),LocVal(0),RecordVal(Var("x"),LocVal(1),EmptyRecordVal)) input: {y := 1, x := 1}[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- test with expected result: IntVal(3) input: let z = 1 in begin {y := z := 0, x := z := 3}; z end *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  IntVal(0) did not equal IntVal(3) (Hw4Test.scala:139)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Analysis:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  IntVal(n: 0 -> 3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- test with expected result: IntVal(1) input: let r = {x:=1,y:=2} in r.x[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- test with expected result: IntVal(3) input: let r = {x:=1,y:={z:=3}} in r.y.z *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  hw4.MiniCInterpreter$UndefinedSemantics: Undefined Semantics: message FieldAccess(Var("r"),Var("y"))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:242)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:234)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:218)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.apply(Hw4.scala:329)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at HweTest.$anonfun$new$2(Hw4Test.scala:133)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- test with expected result: IntVal(1) input: let r = {x:=1,y:={z:=3}} in r.y := 1 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  hw4.MiniCInterpreter$UndefinedSemantics: Undefined Semantics: message FieldAssign(Var("r"),Var("y"),Const(1))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:261)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:218)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.apply(Hw4.scala:329)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at HweTest.$anonfun$new$2(Hw4Test.scala:133)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.funsuite.AnyFunSuiteLike$$anon$1.apply(AnyFunSuiteLike.scala:189)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- test with expected result: IntVal(1) input: let r = {x:=1,y:={z:=3}} in begin r.y := 1; r.y end *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  hw4.MiniCInterpreter$UndefinedSemantics: Undefined Semantics: message FieldAssign(Var("r"),Var("y"),Const(1))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:261)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:267)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:218)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.apply(Hw4.scala:329)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at HweTest.$anonfun$new$2(Hw4Test.scala:133)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- test with expected result: IntVal(1) input: begin {x:=1,y:={z:=3}} end . y := 1 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  hw4.MiniCInterpreter$UndefinedSemantics: Undefined Semantics: message FieldAssign(BeginEnd(RecordExpr(Var("x"),Const(1),RecordExpr(Var("y"),RecordExpr(Var("z"),Const(3),EmptyRecordExpr),EmptyRecordExpr))),Var("y"),Const(1))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:261)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.apply(Hw4.scala:329)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at HweTest.$anonfun$new$2(Hw4Test.scala:133)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
@@ -46,11 +92,11 @@
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.funsuite.AnyFunSuiteLike$$anon$1.apply(AnyFunSuiteLike.scala:189)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- test with expected result: RecordVal(Var("y"),LocVal(0),RecordVal(Var("x"),LocVal(1),EmptyRecordVal)) input: {y := 1, x := 1} *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  hw4.MiniCInterpreter$UndefinedSemantics: Undefined Semantics: message RecordExpr(Var("x"),Const(1),EmptyRecordExpr)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:311)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:309)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.apply(Hw4.scala:324)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- test with expected result: IntVal(2) input: let z = 1 in begin {x:=1,y:={k:=z := 2}} end . y := z *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  hw4.MiniCInterpreter$UndefinedSemantics: Undefined Semantics: message FieldAssign(BeginEnd(RecordExpr(Var("x"),Const(1),RecordExpr(Var("y"),RecordExpr(Var("k"),Asn(Var("z"),Const(2)),EmptyRecordExpr),EmptyRecordExpr))),Var("y"),Var("z"))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:261)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:218)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.apply(Hw4.scala:329)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at HweTest.$anonfun$new$2(Hw4Test.scala:133)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
@@ -58,97 +104,6 @@
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.funsuite.AnyFunSuiteLike$$anon$1.apply(AnyFunSuiteLike.scala:189)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- test with expected result: IntVal(3) input: let z = 1 in begin {y := z := 0, x := z := 3}; z end *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  hw4.MiniCInterpreter$UndefinedSemantics: Undefined Semantics: message RecordExpr(Var("x"),Asn(Var("z"),Const(3)),EmptyRecordExpr)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:311)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:309)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:267)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:218)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.apply(Hw4.scala:324)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at HweTest.$anonfun$new$2(Hw4Test.scala:133)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- test with expected result: IntVal(1) input: let r = {x:=1,y:=2} in r.x *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  hw4.MiniCInterpreter$UndefinedSemantics: Undefined Semantics: message RecordExpr(Var("y"),Const(2),EmptyRecordExpr)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:311)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:309)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:215)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.apply(Hw4.scala:324)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at HweTest.$anonfun$new$2(Hw4Test.scala:133)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- test with expected result: IntVal(3) input: let r = {x:=1,y:={z:=3}} in r.y.z *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  hw4.MiniCInterpreter$UndefinedSemantics: Undefined Semantics: message RecordExpr(Var("z"),Const(3),EmptyRecordExpr)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:311)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:306)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:309)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:215)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.apply(Hw4.scala:324)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at HweTest.$anonfun$new$2(Hw4Test.scala:133)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- test with expected result: IntVal(1) input: let r = {x:=1,y:={z:=3}} in r.y := 1 *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  hw4.MiniCInterpreter$UndefinedSemantics: Undefined Semantics: message RecordExpr(Var("z"),Const(3),EmptyRecordExpr)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:311)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:306)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:309)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:215)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.apply(Hw4.scala:324)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at HweTest.$anonfun$new$2(Hw4Test.scala:133)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- test with expected result: IntVal(1) input: let r = {x:=1,y:={z:=3}} in begin r.y := 1; r.y end *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  hw4.MiniCInterpreter$UndefinedSemantics: Undefined Semantics: message RecordExpr(Var("z"),Const(3),EmptyRecordExpr)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:311)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:306)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:309)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:215)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.apply(Hw4.scala:324)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at HweTest.$anonfun$new$2(Hw4Test.scala:133)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- test with expected result: IntVal(1) input: begin {x:=1,y:={z:=3}} end . y := 1 *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  hw4.MiniCInterpreter$UndefinedSemantics: Undefined Semantics: message RecordExpr(Var("z"),Const(3),EmptyRecordExpr)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:311)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:306)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:309)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:251)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.apply(Hw4.scala:324)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at HweTest.$anonfun$new$2(Hw4Test.scala:133)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- test with expected result: IntVal(2) input: let z = 1 in begin {x:=1,y:={k:=z := 2}} end . y := z *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  hw4.MiniCInterpreter$UndefinedSemantics: Undefined Semantics: message RecordExpr(Var("k"),Asn(Var("z"),Const(2)),EmptyRecordExpr)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:311)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:306)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:309)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:251)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.eval(Hw4.scala:218)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at hw4.MiniCInterpreter$.apply(Hw4.scala:324)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at HweTest.$anonfun$new$2(Hw4Test.scala:133)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- test with expected result: IntVal(1) input: if 0 <= 1 then 1 else 2[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- test with expected result: IntVal(0) input: let fibo = [0m[0m
