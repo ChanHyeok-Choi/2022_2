@@ -8,14 +8,14 @@ Finally, for execute program, just command './<a number of problem>' bulit from 
 For problem 1,
 > cd 1
 > make
-> 1
+> ./1
 
 For problem 2,
-> cd 1
+> cd 2
 > make
-> 1
+> ./2
 
 For problem 3,
 > cd 3
 > make
-> 3
+> ./3
