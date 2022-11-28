@@ -74,7 +74,7 @@ case class RecordExpr(field: Var, initVal: Expr, next: RecordLike) extends Recor
 
 
 
-
+// Writer: 20181257 Chanhyeok Choi
 object MiniCInterpreter {
 
   case class Result(v: Val, m: Mem)

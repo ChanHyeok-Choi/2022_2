@@ -7034,3 +7034,4 @@ WARNING: Unmatched cancel notification for request id 322
 2022.11.28 11:19:54 INFO  Shut down connection with build server.[0m
 2022.11.28 11:19:54 INFO  Shut down connection with build server.[0m
 2022.11.28 11:19:54 INFO  Shut down connection with build server.[0m
+2022.11.28 11:22:42 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/.metals/lsp.trace.json or /home/chanhyeok/.cache/metals/lsp.trace.json[0m
