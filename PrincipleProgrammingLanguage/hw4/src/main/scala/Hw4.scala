@@ -119,7 +119,7 @@ object MiniCInterpreter {
     case RecordVal(field, loc, next) => if (field == x) loc else findVar(next, x)
   }
 
-  def eval(env: Env, mem: Mem, expr: Expr): Result = expr match { // Result = Result(SkipVal, mem)
+  def eval(env: Env, mem: Mem, expr: Expr): Result = expr match {
     case Skip => Result(SkipVal, mem)
     case False => Result(BoolVal(false), mem)
     case True => Result(BoolVal(true), mem)
@@ -134,9 +134,11 @@ object MiniCInterpreter {
     }
     case Const(n) => Result(IntVal(n), mem)
     case Var(s) => {
+      if (env.isEmpty)
+        throw new UndefinedSemantics(s"message ${expr}")
       val p = env(Var(s)) match {
         case (x: LocVal) => mem.m(x)
-        case _ => env(Var(s))
+        case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       Result(p, mem)
 		}
@@ -171,7 +173,11 @@ object MiniCInterpreter {
       val E1 = eval(env, mem, l)
       val E2 = eval(env, E1.m, r)
       val E = (E1, E2) match {
-        case (Result(x: IntVal, xm: Mem), Result(y: IntVal, ym: Mem)) => IntVal(x.n / y.n)
+        case (Result(x: IntVal, xm: Mem), Result(y: IntVal, ym: Mem)) => {
+          if (y.n == 0)
+            throw new UndefinedSemantics(s"message ${expr}")
+          IntVal(x.n / y.n)
+        }
         case _ => throw new UndefinedSemantics(s"message ${expr}")
       }
       Result(E, E2.m)
@@ -309,7 +315,7 @@ object MiniCInterpreter {
           next match {
             case EmptyRecordExpr => Result(RecordVal(field, new_loc, EmptyRecordVal), new_mem)
             case recordExpr: RecordExpr => eval(env, new_mem, recordExpr) match {
-              case Result(v: RecordVal, m) => Result(RecordVal(field, new_loc, v), m)
+              case Result(next_v: RecordVal, next_m) => Result(RecordVal(field, new_loc, next_v), next_m)
               case _ => throw new UndefinedSemantics(s"message ${expr}")
             }
           }
@@ -325,40 +331,43 @@ object MiniCInterpreter {
         case None => throw new UndefinedSemantics(s"message ${head}")
         case Some(value) => value match {
           case LocVal(l) => {
-            if (reach.exists(_ == LocVal(l))) reach
-            else reach :+ LocVal(l)
+            if (reach.exists(_ == LocVal(l))) List(head) ::: Reach(env, mem, next)
+            else {
+              val new_reach = List(LocVal(l)) ::: next
+              List(head) ::: Reach(env, mem, new_reach)
+            }
           }
-          case rv: RecordVal => reach ::: ReachRec(rv, env, mem, reach)
-          case ProcVal(args, expr, env_prime) => reach ::: Reach(env_prime, mem, reach)
-          case _ => reach :+ head
+          case rv: RecordVal => {
+            val new_reach = ReachRec(rv, env, mem) ::: next
+            List(head) ::: Reach(env, mem, new_reach)
+          }
+          case ProcVal(args, expr, env_prime) => List(head) ::: Reach(env_prime, mem, reach) ::: Reach(env, mem, next)
+          case _ => List(head) ::: Reach(env, mem, next)
         }
       }
     }
-    case Nil => reach
+    case Nil => Nil
   }
 
-  def ReachRec(rv: RecordValLike, env: Env, mem: Mem, reach: List[LocVal]): List[LocVal] = rv match {
-    case EmptyRecordVal => reach
+  def ReachRec(rv: RecordValLike, env: Env, mem: Mem): List[LocVal] = rv match {
+    case EmptyRecordVal => Nil
     case RecordVal(field, loc, next) => {
-      val new_reach = reach :+ loc
-      ReachRec(next, env, mem, new_reach)
+      List(loc) ::: ReachRec(next, env, mem)
     }
   }
 
-  def ReachMem(l: List[LocVal], mem: Mem): Mem = {
-    mem.getLocs match {
-      case head :: next => {
-        if (l.exists(_ == head)) ReachMem(l, mem)
-        else ReachMem(l, Mem(mem.m.-(head), mem.top))
-      }
-      case Nil => mem
+  def ReachMem(l: List[LocVal], mem: Mem, mem_locs: List[LocVal]): Mem = mem_locs match {
+    case head :: next => {
+      if (l.exists(_ == head)) ReachMem(l, mem, next)
+      else ReachMem(l, Mem(mem.m.-(head), mem.top), next)
     }
+    case Nil => mem
   }
 
   def gc(env: Env, mem: Mem): Mem = {
     val init_reach = env.values.toList
     val reach = Reach(env, mem, init_reach)
-    ReachMem(reach, mem)
+    ReachMem(reach, mem, mem.getLocs())
   }
   
   def apply(program: String): (Val, Mem) = {

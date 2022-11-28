@@ -1,4 +1,4 @@
-// Generated from /home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/src/main/antlr4/MiniCParser.g4 by ANTLR 4.8
+// Generated from /home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/src/main/antlr4/MiniCParser.g4 by ANTLR 4.8
 package hw4;
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 

@@ -1,3 +1,4 @@
-[debug] "not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/project/"), "hw4-build")...
-[debug] Done updating ProjectRef(uri("file:/home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/project/"), "hw4-build")
+[warn] sbt-antlr4-0.8.3-sources.jar no longer exists at /home/chan4184/.cache/coursier/v1/https/repo1.maven.org/maven2/com/simplytyped/sbt-antlr4_2.12_1.0/0.8.3/sbt-antlr4-0.8.3-sources.jar
+[debug] "not up to date. inChanged = false, force = false
+[debug] Updating ProjectRef(uri("file:/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/project/"), "hw4-build")...
+[debug] Done updating ProjectRef(uri("file:/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/project/"), "hw4-build")

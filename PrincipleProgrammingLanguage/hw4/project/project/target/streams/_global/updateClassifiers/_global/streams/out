@@ -1,3 +1,4 @@
-[debug] "not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/project/project/"), "hw4-build-build")...
-[debug] Done updating ProjectRef(uri("file:/home/chan4184/2022_2/PrincipleProgrammingLanguage/hw4/project/project/"), "hw4-build-build")
+[warn] sbt-bloop-1.5.4-sources.jar no longer exists at /home/chan4184/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.5.4/sbt-bloop-1.5.4-sources.jar
+[debug] "not up to date. inChanged = false, force = false
+[debug] Updating ProjectRef(uri("file:/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/project/project/"), "hw4-build-build")...
+[debug] Done updating ProjectRef(uri("file:/home/chanhyeok/2022_2/PrincipleProgrammingLanguage/hw4/project/project/"), "hw4-build-build")
