@@ -5,6 +5,7 @@ visualizing your data structures before and after the operations.
 */
 
 #include <iostream>
+#include <exception>
 #include <string>
 
 using namespace std;
@@ -37,6 +38,12 @@ public:
     void Color() {
         if(color == COLOR::BLACK) cout << "B";
         else cout << "R";
+    }
+    void Clean() {
+        left->left = NULL;
+        left->right = NULL;
+        right->left = NULL;
+        right->right = NULL;
     }
     friend class RBTree;
 };
@@ -146,7 +153,7 @@ public:
             }            
         }
     }
-    RBNode* Recolor(RBNode* z) {
+    RBNode* InsertionRecolor(RBNode* z) {
         RBNode* v = z->parent;
         RBNode* w = getSibling(v);
         v->color = COLOR::BLACK;
@@ -165,7 +172,7 @@ public:
                     root = z;
                 return;
             } else { // sibling color is red
-                z = Recolor(z);
+                z = InsertionRecolor(z);
                 if(z == root)
                     return;
             }
@@ -179,7 +186,6 @@ public:
             RBNode* newNode = MakeNewNode(k, e);
             root = newNode;
             root->color = COLOR::BLACK;
-            n++;
             return newNode;
         }
         if(v->key > k && v->isExternal() != true) {
@@ -190,19 +196,145 @@ public:
             RBNode* newNode = MakeNewNode(k, e);
             newNode->parent = v->parent;
             v->parent->left = newNode;
+            newNode->Clean();
             RemedyDoubleRed(newNode);
-            n++;
             return newNode;
         } else { // v->parent->right == v && v->isExternal() == true
             RBNode* newNode = MakeNewNode(k, e);
             newNode->parent = v->parent;
             v->parent->right = newNode;
             RemedyDoubleRed(newNode);
-            n++;
+            newNode->Clean();
             return newNode;
         }
     }
-    RBNode* remove(int k, int e, RBNode* v);
+    RBNode* DeletionRestructure(RBNode* r) {
+        // RBNode* x = r->parent;
+        RBNode* y = getSibling(r);
+        if(y->left->color == COLOR::RED) {
+            RBNode* z = y->left;
+            y = Restructure(z);
+            y->color = COLOR::RED; y->left->color = COLOR::BLACK; y->right->color = COLOR::BLACK;
+            return y;
+        } else { // r->right->color == COLOR::RED
+            RBNode* z = y->right;
+            y = Restructure(z);
+            y->color = COLOR::RED; y->left->color = COLOR::BLACK; y->right->color = COLOR::BLACK;
+            return y;
+        }
+    }
+    RBNode* DeletionRecolor(RBNode* r) {
+        // case 2-1. x (r's parent) is red
+        // case 2-2. x (r's parent) is black
+        RBNode* x = r->parent;
+        RBNode* y = getSibling(r);
+        if(x->color == COLOR::RED) { // case 2-1.
+            x->color = COLOR::BLACK;
+            y->color = COLOR::RED;
+        } else { // x->color == COLOR::BLACK // case 2-2.
+            y->color = COLOR::RED;
+        }
+        return x;
+    }
+    RBNode* DeletionAdjustment(RBNode* r) {
+        // If y is the right child of x, then let z be the right child of y
+        // If y is the left child of x, then let z be the left child of y
+        // case 3-1: z is the left child of y
+        // case 3-2: z is the right child of y
+        RBNode* x = r->parent;
+        RBNode* y = getSibling(r);
+        if(x->left == y) { // case 3-2
+            RBNode* z = y->left;
+            y = Restructure(z);       
+        } else { // case 3-1
+            RBNode* z = y->right;
+            y = Restructure(z);
+        }
+        y->color = COLOR::BLACK; y->left->color = COLOR::BLACK; y->right->color = COLOR::RED;
+        return r;
+    }
+    bool CheckDoubleBlack(RBNode* r) {
+        
+    }
+    void RemedyDoubleBlack(RBNode* r) {
+        // case 1: The sibling y of r is black, and has a red child z
+        // case 2: The sibling y of r is black, and y’s both children are black
+        // case 3: The sibling y of r is red
+        RBNode* y = getSibling(r);
+        while(r != root && r->color == COLOR::BLACK) {
+            if(y->color == COLOR::BLACK && (y->left->color == COLOR::RED || y->right->color == COLOR::RED)) { // case 1
+                r = DeletionRestructure(r);
+                return;
+            } else if(y->color == COLOR::BLACK && (y->left->color == COLOR::BLACK && y->right->color == COLOR::BLACK)) { // case 2
+                r = DeletionRecolor(r);
+            } else { // y->color == COLOR::RED // case 3
+                r = DeletionAdjustment(r);
+            }
+            y = getSibling(r);
+        }
+        return;
+    }
+    void remove(int k, RBNode* v) {
+        // step 1. Find the deletion node of k by executing binary tree algorithm
+        // step 2. Remedy Double-Black
+        if(n == 0) {
+            cout << "EmptyRBTree!" << '\n';
+            return;
+        }
+        if(v->key > k && v->isExternal() != true) {
+            remove(k, v->left);
+        } else if(v->key < k && v->isExternal() != true) {
+            remove(k, v->right);
+        } else if(v->key == k) {
+            if(n == 1) {
+                delete root;
+                return;
+            }
+            RBNode* tempNode;
+            if (!(v->left->isExternal()) && !(v->right->isExternal())){ // when node have 2 children
+                tempNode = v->right;
+                while(!(tempNode->left->isExternal())) {
+                    tempNode = tempNode->left;
+                } // set inorder successor
+            }
+            else if (v->left->isExternal() && v->right->isExternal()) // when leaf
+                tempNode = v;
+            else if (!(v->left->isExternal())) // when single child
+                tempNode = v->left;
+            else // !(v->right->isExternal())
+                tempNode = v->right;
+            v->key = tempNode->key; v->elem = tempNode->elem; // copy inorder successor
+            // Let v be the internal node removed, w the external node removed, and r the sibling of w
+            v = tempNode; RBNode* w = (v->left->isExternal() ? v->left : v->right); RBNode* r = getSibling(w);
+            // case 0: If either v or r was red, we color r black and we are done
+            // case 1~3: If v and r were both BLACK, w color r double-black
+            if(v->color == COLOR::RED || r->color == COLOR::RED) { // case 0
+                if(v->parent->right == v) {
+                    v->parent->right = r;
+                } else { // v->parent->left == v
+                    v->parent->left = r;
+                }
+                r->parent = v->parent;
+                r->color = COLOR::BLACK;
+                delete v; n--;
+                return;
+            } else { // v->color == COLOR::BLACK && r->color == COLOR::BLACK // case 1~3
+                if(v->parent->right == v) {
+                    v->parent->right = r;
+                } else { // v->parent->left == v
+                    v->parent->left = r;
+                }
+                r->parent = v->parent;
+                delete v; n--;
+                // Regard x as "double black nodes"
+                RemedyDoubleBlack(r);
+                return;
+            }
+        } else {
+            cout << "There is no entry having such key" << '\n';
+            return;
+        }
+    }
     void Show(RBNode* v, string blank, bool rightOrleft) { // show the RB Tree
         if (v != NULL) {
             cout << blank; // print blank by depth of v
@@ -214,13 +346,7 @@ public:
                 blank += "|    "; // bridge with right node
             }
             // cout << v->key << " (" << max(getHeight(v->left), getHeight(v->right)) + 1 << ")" << '\n';
-            try {
-                if(v) // Wrong address
-                    throw "Wrong v address";
-                cout << "(" << v->key << ", " << v->elem << ") " << " ("; v->Color(); cout << ")" << '\n';
-            } catch(string sentence) {
-                cout << "(0, 0) (B)\n";
-            }
+            cout << "(" << v->key << ", " << v->elem << ") " << " ("; v->Color(); cout << ")" << '\n';
             Show(v->left, blank, false); // first, go left node
             Show(v->right, blank, true); // and then, go right node
         }
@@ -231,7 +357,7 @@ void printMenu() {
     cout << "<---------Menu--------->\n";
     cout << "1. Print Red-Black Tree\n";
     cout << "2. Insert (key, element)\n";
-    cout << "3. Remove (key, element)\n";
+    cout << "3. Remove (key)\n";
     cout << "4. Exit\n";
     cout << "Input your choice: ";
 }
@@ -253,7 +379,7 @@ int main() {
                 break;
             case 3:
                 cout << "Input your \'key\' for removal: "; cin >> key;
-                // rb.remove(key, element, rb.getRoot());
+                rb.remove(key, rb.getRoot());
                 break;
             default: 
                 cout << "Exit Program\n";
