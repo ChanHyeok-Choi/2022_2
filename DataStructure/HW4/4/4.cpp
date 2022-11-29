@@ -250,11 +250,10 @@ public:
             RBNode* z = y->right;
             y = Restructure(z);
         }
+        if(x == root)
+            root = y;
         y->color = COLOR::BLACK; y->left->color = COLOR::BLACK; y->right->color = COLOR::RED;
         return r;
-    }
-    bool CheckDoubleBlack(RBNode* r) {
-        
     }
     void RemedyDoubleBlack(RBNode* r) {
         // case 1: The sibling y of r is black, and has a red child z
@@ -267,6 +266,8 @@ public:
                 return;
             } else if(y->color == COLOR::BLACK && (y->left->color == COLOR::BLACK && y->right->color == COLOR::BLACK)) { // case 2
                 r = DeletionRecolor(r);
+                if(r->parent == root)
+                    return;
             } else { // y->color == COLOR::RED // case 3
                 r = DeletionAdjustment(r);
             }
